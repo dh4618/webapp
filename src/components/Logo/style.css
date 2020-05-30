@@ -1,0 +1,9 @@
+.logo{
+    text-align: center;
+}
+.logo a{
+    font-family: 'Rock Salt';
+    font-size: 60px;
+    text-decoration: none;
+    color:#459A90;
+}

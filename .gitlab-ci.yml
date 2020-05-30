@@ -1,0 +1,28 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - echo "This job builds something."
+    - npm install
+    - npm run build
+
+test:
+  stage: test
+  script:
+    - echo "This job tests something. It will only run when all jobs in the"
+    - echo "build stage are complete."
+    - npm install
+    - npm test
+
+deploy:
+  stage: deploy
+  script:
+    - echo "This job deploys something. It will only run when all jobs in the"
+    - echo "test stage complete."
+    - gem install --user-install dpl-heroku
+    - PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+    - dpl --provider=heroku --app=paskala --api-key=05e33012-7a01-45ba-a47e-2cd8e8a7137e
