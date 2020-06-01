@@ -1,10 +1,63 @@
 body{
-    background: #e9eaed;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 70%);
     font-family: 'Oswald', sans-serif; 
 }
 
-.App{
-    width: 90%;
-    margin: 0 auto;
-    border: 1px solid #000000;
-}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:3rem;
+
+    background: #F2F2F2;
+    z-index: 1;
+  }
+  .nav-header {
+    font-size: 30px;
+    display: flex;
+    padding-left: 10px;
+    justify-content: space-between;
+  }
+  .nav-btn {
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    right: 0px;
+    top:0px;
+    background: rgb(207, 206, 206);
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .nav-icon {
+    font-size: 1.5rem;
+    color: black;
+  }
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--mainTransition);
+    list-style-type: none;
+  }
+  .nav-links a {
+    
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: var(--mainBlack);
+    transition: var(--mainTransition);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  .nav-links a:hover {
+    color: rgb(201, 144, 37);
+  }
+
+  .show-nav {
+    background: #F2F2F2;
+    height: 110px;
+    
+  }
