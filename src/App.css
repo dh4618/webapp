@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(90deg, #4b6cb7 0%, #182848 70%);
+    /*background: linear-gradient(90deg, #4b6cb7 0%, #182848 70%);*/
     font-family: 'Oswald', sans-serif; 
 }
 /* 
@@ -150,12 +150,6 @@ h6 {
     
   }
 
-  .homepage{
-    color: white;
-    text-align: center;
-    position: relative;
-    top:200px;
-  }
   
   .welcoming{
     color: white;
@@ -165,6 +159,7 @@ h6 {
 
 /* Hero */
 .defaultHero,
+.roomsHero,
 .exploreHero{
   background: url("./assets/images/welcome.svg") center/cover no-repeat;
   display: flex;
@@ -172,9 +167,14 @@ h6 {
   justify-content: center;
 }
 
-.exploreHero {
+.roomsHero {
   background-image: url("./assets/images/facebook.png");
   min-height: 50vh;
+}
+
+.exploreHero{
+  background-image: url("./assets/images/explorebackgrond.jpg");
+  color: white;
 }
 
 /* Banner */
@@ -239,6 +239,22 @@ h6 {
 /* Signup Page */
 .signup {
   background-color: yellow;
+  font-size: large;
+}
+/* Home Page */
+.home {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 70%);
+}
+
+/* login Page */
+.login {
+  background-color: orange;
+  font-size: large;
+}
+
+/* Payment */
+.payment {
+  background-color: pink;
   font-size: large;
 }
 
