@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react"
+import Hero from "../components/Hero"
 
 const explore = () => {
     return (
-        <div>
-            Hello from the Explore Page!
-        </div>
+       <Hero hero="exploreHero"/>
     )
 }
 

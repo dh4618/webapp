@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
+import Hero from '../components/Hero';
 
 export default class facebook extends Component {
     render() {
