@@ -196,8 +196,11 @@ h6 {
   background-color: white;
   box-shadow: 5px 5px 5px rgb(83, 83, 83);
   border-radius: 10px;
-  line-height: 5rem;
-  
+  line-height: 3rem;
+}
+
+.loginHero input[type=submit] {
+  margin-right: 0;
 }
 
 /* Banner */
