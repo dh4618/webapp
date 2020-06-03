@@ -91,7 +91,7 @@ h6 {
 
 
 .navbar {
-    position: fixed absolute;
+    position: fixed ;
     top: 0;
     left: 0;
     width: 100%;
@@ -279,17 +279,30 @@ h6 {
 }
 
 /*Explore Page*/
-.company-container {
+.company-cards-container{ 
+  flex-wrap:  wrap;
+  justify-content: space-evenly; 
+  align-content: space-around;
+}
+.company-card {
   width: 200px;
   height: 300px;
   margin-top: 1rem;
   margin-left: 1rem;
+  margin-top: 2rem;
   background-color: rgb(189, 188, 188);
   box-shadow: 3px 3px 2px rgb(83, 83, 83);
   border-radius: 10px;
-  line-height: 5rem;
+  line-height: 1rem;  
+  text-align: center;
+
 }
 
+.company-logo {
+  height: 100px;
+  width: auto;
+  padding-top: 1rem;
+}
 
 
 /* login Page */
