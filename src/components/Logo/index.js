@@ -10,10 +10,7 @@ const Logo = (props) => {
   return(
     <div className="logo"> 
     Paskala
-    
     </div>
    )
-
  }
-
 export default Logo

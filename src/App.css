@@ -54,20 +54,20 @@ h6 {
 }
 
 .btn-primary {
+
   display: inline-block;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
   color: var(--mainBlack);
-  background: var(--primaryColor);
+  background: rgb(176, 226, 176);
   padding: 0.4rem 0.9rem;
-  border: 3px solid var(--primaryColor);
-  transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
 }
 .btn-primary:hover {
   background: transparent;
-  color: var(--primaryColor);
+  color: grey;
 }
 .loading {
   text-transform: capitalize;
@@ -96,7 +96,6 @@ h6 {
     left: 0;
     width: 100%;
     height:3rem;
-
     background: #F2F2F2;
     z-index: 1;
     box-shadow: 0px 1px 10px rgb(49, 49, 49);
@@ -111,7 +110,7 @@ h6 {
     width: 3rem;
     height: 3rem;
     position: fixed;
-    right: 0px;
+    left: 0px;
     top:0px;
     background: rgb(207, 206, 206);
     border: none;
@@ -133,7 +132,7 @@ h6 {
     display: block;
     text-decoration: none;
     padding: 1rem 0;
-    color: var(--mainBlack);
+    color:white;
     transition: var(--mainTransition);
     text-align: center;
     font-size: 1rem;
@@ -145,8 +144,12 @@ h6 {
   }
 
   .show-nav {
-    background: #F2F2F2;
-    height: 110px;
+    background: rgb(48, 46, 46);
+    height: 100vw;
+    width: 10vw;
+    position: absolute;
+    z-index: auto;
+ 
     
   }
 
@@ -243,8 +246,51 @@ h6 {
 }
 /* Home Page */
 .home {
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 70%);
+  background: linear-gradient(90deg, #329D9C 0%, #56C5A4 70%);
 }
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-right: 90px;
+  margin-left: 90px;
+  padding-top: 25px;
+  background-color: white;
+  box-shadow: 7px -7px 5px rgb(83, 83, 83);
+  border-radius: 10px;
+  line-height: 5rem;
+}
+
+.welcome {
+  font-family: 'Ubuntu Condensed';
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-align: center;
+
+}
+
+.slogan {
+  font-family: 'Ubuntu Condensed';
+  text-align: center;
+  font-size: 20px;
+  padding-top: 2rem;
+  letter-spacing: 4px;
+}
+
+/*Explore Page*/
+.company-container {
+  width: 200px;
+  height: 300px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  background-color: rgb(189, 188, 188);
+  box-shadow: 3px 3px 2px rgb(83, 83, 83);
+  border-radius: 10px;
+  line-height: 5rem;
+}
+
+
 
 /* login Page */
 .login {
@@ -260,7 +306,7 @@ h6 {
 
 /* services */
 .services {
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 .services {
   background: var(--darkGrey);
@@ -268,7 +314,7 @@ h6 {
 }
 .services-center {
   width: 90vw;
-  margin: 0 auto;
+  margin:  auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   grid-row-gap: 2rem;
