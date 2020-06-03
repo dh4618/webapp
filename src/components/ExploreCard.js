@@ -13,8 +13,10 @@ class ExploreCard extends Component {
             <p>{companyName}</p>
             <p>#{sector}</p>
             <p>#{subindustry}</p>
-           
-        </div>
+            <div className="addto-wishlist">
+                Add to Wish List
+            </div>
+            </div>
         )
     }
 }

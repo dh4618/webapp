@@ -106,6 +106,18 @@ h6 {
     padding-left: 10px;
     justify-content: space-between;
   }
+
+  .nav-logo {
+    font-family: "Rock Salt";
+    font-size: small;
+    margin-left: 10px;
+    display: inline-block;
+    color: var(--mainBlack);
+    padding: 0.4rem 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+  }
   .nav-btn {
     width: 3rem;
     height: 3rem;
@@ -189,6 +201,7 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  
 }
 .banner h1 {
   font-size: 2.5rem;
@@ -295,7 +308,6 @@ h6 {
   border-radius: 10px;
   line-height: 1rem;  
   text-align: center;
-
 }
 
 .company-logo {
@@ -304,11 +316,52 @@ h6 {
   padding-top: 1rem;
 }
 
+.search input[type=text]{
+  float: right;
+  padding: 5px 100px;
+  border: none;
+  font-size: 15px;
+}
+
+.search input[type=submit]{
+  float: right;
+  padding: 5px 50px;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(122, 126, 129);
+  color: #F2F2F2;
+}
+
+.filter {
+  font-size: 50px;
+  text-align: center;
+}
+
+.addto-wishlist {
+
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: rgb(247, 169, 35);
+  box-shadow: 1px 1px 1px grey;
+  padding: 0.4rem 0.9rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.addto-wishlist:hover {
+  box-shadow: none;
+
+}
 
 /* login Page */
 .login {
   background-color: orange;
   font-size: large;
+
 }
 
 /* Payment */
