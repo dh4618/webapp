@@ -183,6 +183,12 @@ h6 {
   justify-content: center;
 }
 
+/* Home Page */
+.home {
+  height: 54vw;
+  background: linear-gradient(90deg, #329D9C 0%, #56C5A4 70%);
+}
+
 .exploreHero{
   background-image: url("./assets/images/explorebackgrond.jpg");
   color: white;
@@ -273,17 +279,14 @@ h6 {
   background-color: yellow;
   font-size: large;
 }
-/* Home Page */
-.home {
-  background: linear-gradient(90deg, #329D9C 0%, #56C5A4 70%);
-}
+
 
 .container {
-  width: 80vw;
+  width: 70vw;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-right: 90px;
-  margin-left: 90px;
+  position: absolute;
+  top:150px;
+  left: 180px;
   padding-top: 25px;
   background-color: white;
   box-shadow: 7px -7px 5px rgb(83, 83, 83);

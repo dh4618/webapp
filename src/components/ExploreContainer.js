@@ -8,7 +8,10 @@ class ExploreContainer extends Component {
     render() {
         return (
         <Flexbox className="company-cards-container">
-        <ExploreCard image="facebook.png" companyName="Facebook" sector="social" subindustry="communication"/>
+          <Link to="/company">
+          <ExploreCard image="facebook.png" companyName="Facebook" sector="social" subindustry="communication"/>
+          </Link>
+       
         
         <ExploreCard image="ae.png" companyName="American Eagle Outfitter" sector="clothings" subindustry="whatever"/>
         <ExploreCard image="facebook.png" companyName="Facebook" sector="social" subindustry="communication"/>

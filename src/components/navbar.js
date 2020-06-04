@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Logo from "./Logo"
 import {Link} from 'react-router-dom'
 import {AiOutlineBars} from 'react-icons/ai'
 

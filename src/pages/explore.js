@@ -23,7 +23,7 @@ const explore = () => {
       </Hero>
 
       <div className="filter">
-        Filters here
+        Filters: Price, Economic Sector, Industry
       </div>
       <ExploreContainer/>
       

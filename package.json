@@ -15,6 +15,7 @@
     "flexbox-react": "^4.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-dropdown": "^1.7.0",
     "react-icons": "^3.10.0",
     "react-native-linear-gradient": "^2.5.6",
     "react-router-dom": "^5.2.0",

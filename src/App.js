@@ -4,7 +4,7 @@ import Home from './pages/home';
 import Signup from './pages/signup';
 import Login from './pages/login';
 import Explore from './pages/explore';
-import Facebook from './pages/facebook';
+import Company from './pages/company';
 import Error from './pages/error';
 import Payment from './pages/payment';
 import Profile from './pages/profile';
@@ -31,7 +31,7 @@ function App() {
         <Route exact path="/login" component={Login} />
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/explore/" component={Explore} />
-        <Route exact path="/explore/:slug" component={Facebook} />
+        <Route exact path="/company" component={Company} />
         <Route exact path="/tutorial/basic" component={Tutorial} />
         <Route exact path="/aboutus" component={About} />
         <Route exact path="/payment" component={Payment} />
