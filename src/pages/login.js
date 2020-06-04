@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function login() {
     return (
@@ -8,7 +9,7 @@ export default function login() {
                 <h2>Log In</h2>
                 <div className="form-fields">Username : <input type="text" name="username"/> </div>
                 <div className="form-fields">Password :<input type="password" name="password" /></div>
-                <div><input type="button" value="Log In" /></div>
+                <Link to="/explore"><input type="button" value="Log In" /></Link>
             </div>
             
         </div>
