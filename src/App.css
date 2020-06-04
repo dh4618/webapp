@@ -187,11 +187,14 @@ h6 {
 }
 
 .loginHero{
-  width: 30vw;
-  height: 10vw;
+  width: 600px;
+  height: 250px;
   margin: 0 auto;
-  margin-top: 250px;
-  margin-left: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -125px;
+  margin-left: -300px;
   padding-top: 25px;
   background-color: white;
   box-shadow: 5px 5px 5px rgb(83, 83, 83);
@@ -369,7 +372,9 @@ h6 {
 
 /* login Page */
 .login {
-  background: linear-gradient(90deg, #56C596 70%, #205072 70%);
+  background: linear-gradient(130deg, #56C596 50%, #205072 50%);
+  width:100vw;
+  height:55vw;
  }
 
 /* Payment */
