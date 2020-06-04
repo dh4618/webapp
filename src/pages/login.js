@@ -4,10 +4,11 @@ export default function login() {
     return (
         <div className="login">
             <div className="loginHero">
-                Log in
-                <div> Username: <input type="text" name="username"/> </div>
-                <div>Passward:<input type="password" name="password" /></div>
-                <div><input type="submit" name="Log in" /></div>
+            
+                <h2>Log In</h2>
+                <div className="form-fields">Username : <input type="text" name="username"/> </div>
+                <div className="form-fields">Password :<input type="password" name="password" /></div>
+                <div><input type="button" value="Log In" /></div>
             </div>
             
         </div>
