@@ -15,14 +15,14 @@ class CompanyProvider extends Component {
     componentDidMount() {
         //this.getData
         let companies = this.formatData(items);
-        let featuredCompanies = rooms.filter(room => room.feature ===true);
+        let featuredCompanies = companies.filter(company => company.featured ===true);
         this.setState({
             companies, 
             featuredCompanies, 
             sortedCompanies:companies, 
             loading:false
-        })
-        console.log(companies);
+        });
+
     }
 
     //Format the data from data.js and pass it to componentDidMount()

@@ -422,6 +422,32 @@ h6 {
 /* Payment */
 .payment {
   background-color: pink;
+  position:relative;
+  top:100px;
+  font-size: large;
+}
+
+/* about us */
+.aboutus {
+  background-color: rgb(59, 122, 88);
+  position:relative;
+  top:100px;
+  font-size: large;
+}
+
+/* profile */
+.profile {
+  background-color: rgb(47, 49, 165);
+  position:relative;
+  top:100px;
+  font-size: large;
+}
+
+/* tutorial */
+..tutorial {
+  background-color: rgb(150, 112, 180);
+  position:relative;
+  top:100px;
   font-size: large;
 }
 
