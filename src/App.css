@@ -52,6 +52,7 @@ h5 {
 h6 {
   font-size: 1em;
   font-weight: bold;
+
   margin-bottom: 1.5em;
 }
 
@@ -290,7 +291,42 @@ h6 {
   background: linear-gradient(180deg, #849E9A 0%, #205072 100%);
   width:100vw;
   height:180vw;
-}
+ }
+
+ .reg-form-fields {
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: xx-large;
+ }
+
+
+ .reg-form-fields input[type=text],
+ .reg-form-fields input[type=password]{
+  margin-left:50px;
+  margin-bottom: 10px;
+  padding-left: 100px;
+  padding-top: 10px;
+  font-size: large;
+ }
+
+ .signupHero input[type=button] {
+  position: absolute;
+  right: 450px;
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: large;
+  letter-spacing: var(--mainSpacing);
+  color: white;
+  background: rgb(247, 169, 35);
+  border: none;
+  box-shadow: 1px 1px 1px grey;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 3px;
+ }
 
 /* Home Page */
 .home {
