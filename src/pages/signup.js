@@ -12,7 +12,7 @@ export default function signup() {
             <br />
             <h3>Your details</h3>
             First name *<br />
-            <div className="reg-form-fields"><input type="text" name="firstname"/> </div>
+            <div className="reg-form-fields"><input type="text" name="firstname" /> </div>
             Last name *
             <div className="reg-form-fields"><input type="text" name="lastname"/> </div>
             Sex *<br />
@@ -23,13 +23,13 @@ export default function signup() {
             <input type="radio" id="other" name="gender" value="other" />
             <label for="other">Other</label><br />
             Address *<br />
-            <div className="reg-form-fields"><input type="text" name="addr"/></div>
-            <div className="reg-form-fields"><input type="text" name="addr2"/></div>
-            <div className="reg-form-fields"><input type="text" name="city"/></div>
-            <div className="reg-form-shorter-fields"><input type="text" name="postcode"/></div>
+            <div className="reg-form-fields"><input type="text" name="addr" placeholder="Street"/></div>
+            <div className="reg-form-fields"><input type="text" name="addr2" placeholder="Street (Optional)"/></div>
+            <div className="reg-form-fields"><input type="text" name="city" placeholder="City" /></div>
+            <div className="reg-form-shorter-fields"><input type="text" name="postcode" placeholder="Post code" /></div>
             Date of birth *<br />
             <div/>
-            <div className="reg-form-shorter-fields"><input type="text" name="DD" /> &emsp;<input type="text" name="MM"/> &emsp;<input type="text" name="YY"/>
+            <div className="reg-form-shorter-fields"><input type="text" name="DD" placeholder="DD" /> &emsp;<input type="text" name="MM" placeholder="MM" /> &emsp;<input type="text" name="YY" placeholder="YYYY"/>
             </div>
             Email *<br />
             <div className="reg-form-fields"><input type="text" name="email"/></div>
