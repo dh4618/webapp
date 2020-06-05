@@ -292,6 +292,10 @@ h6 {
   width:100vw;
   height:180vw;
  }
+ 
+ .tab {
+ margin-left: 10em;
+ }
 
  .reg-form-fields {
   text-align: left;
@@ -302,7 +306,6 @@ h6 {
 
  .reg-form-fields input[type=text],
  .reg-form-fields input[type=password]{
-  margin-left:50px;
   margin-bottom: 10px;
   padding-left: 100px;
   padding-top: 10px;
