@@ -4,7 +4,6 @@ import Home from './pages/home';
 import Signup from './pages/signup';
 import Login from './pages/login';
 import Explore from './pages/explore';
-import Company from './components/Company';
 import Error from './pages/error';
 import Payment from './pages/payment';
 import Profile from './pages/profile';
