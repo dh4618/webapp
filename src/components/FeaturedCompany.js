@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {CompanyContext} from "../context"
 import Loading from "./loading"
-import Company from "./company"
+import Company from "./Company"
 import Title from "./Title"
 
 export default class FeaturedCompany extends Component {

@@ -35,11 +35,23 @@ class CompanyProvider extends Component {
         });
         return tempItems;
     }
+        //first get the list of companies to tempCompany
+        //find the company that matches the slug, find is finding the first match and return an object
+    getCompany =(slug) => {
+        let tempCompany = [...this.state.companies];
+        const company = tempCompany.find((company)=>company.slug === slug)
+        return company;
+    }
 
 
     render() {
         return (
-            <CompanyContext.Provider value={{...this.state}}>
+            <CompanyContext.Provider 
+            value={{
+                ...this.state, 
+                getCompany:this.getCompany
+                }}
+            >
                 {this.props.children}
             </CompanyContext.Provider> 
                 
