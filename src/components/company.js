@@ -2,11 +2,12 @@ import React from "react"
 import Hero from './Hero';
 import Banner from "./Banner";
 import {Link} from "react-router-dom";
+import PropTypes from "prop-types"
+import { CompanyProvider } from "../context";
 
-export default function company({company}) {
+export default function Company({company}) {
     const{name,slug,images,subindustry,sector} = company;
     
-    // const{name,slug,images,subindustry,sector} = company;
     return (
         <article className="room">
             <div className="img-container">
@@ -19,11 +20,21 @@ export default function company({company}) {
                 </div>
                 <Link to={`/explore/${slug}`} className="btn-primary room-link">Feature</Link>
             </div>
+            <p className="room-info">
+                {name}
+            </p>
         </article>
-     
-    
-
 
     )
+}
+
+Company.propTypes ={
+    comopany:PropTypes.shape({
+        name:PropTypes.string.isRequired,
+        slug:PropTypes.string.isRequired,
+        sector:PropTypes.string.isRequired,
+        subindustry:PropTypes.string.isRequired,
+        images:PropTypes.arrayOf(PropTypes.string).isRequired,
+    })
 }
 
