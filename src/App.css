@@ -76,6 +76,11 @@ h6 {
   text-align: center;
   margin-top: 3rem;
 }
+
+.loading-gif {
+  width : 100px;
+  height:auto;
+}
 .error {
   text-align: center;
   text-transform: uppercase;
