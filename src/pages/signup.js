@@ -17,13 +17,20 @@ export default function signup() {
             <div className="reg-form-fields"><input type="text" name="lastname"/> </div>
             Sex *<br />
             <input type="radio" id="male" name="gender" value="male" />
-            <label for="male">Male</label>
+            <label for="male">Male</label>&emsp;&emsp;&emsp;&emsp;
             <input type="radio" id="female" name="gender" value="female" />
-            <label for="female">Female</label>
+            <label for="female">Female</label>&emsp;&emsp;&emsp;&emsp;
             <input type="radio" id="other" name="gender" value="other" />
             <label for="other">Other</label><br />
             Address *<br />
             <div className="reg-form-fields"><input type="text" name="addr"/></div>
+            <div className="reg-form-fields"><input type="text" name="addr2"/></div>
+            <div className="reg-form-fields"><input type="text" name="city"/></div>
+            <div className="reg-form-shorter-fields"><input type="text" name="postcode"/></div>
+            Date of birth *<br />
+            <div/>
+            <div className="reg-form-shorter-fields"><input type="text" name="DD" /> &emsp;<input type="text" name="MM"/> &emsp;<input type="text" name="YY"/>
+            </div>
             Email *<br />
             <div className="reg-form-fields"><input type="text" name="email"/></div>
             Phone number<br />

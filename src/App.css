@@ -211,7 +211,7 @@ h6 {
 
 .signupHero{
   width: 1189px;
-  height: 2500px;
+  height: 1700px;
   margin: 0 auto;
   position: absolute;
   top: 41px;
@@ -286,16 +286,22 @@ h6 {
 }
 /* end of Title */
 
+
+.tab {
+margin-left: 10em;
+}
+
+.centralise{
+text-align: center;
+}
+
 /* Signup Page */
 .signup {
   background: linear-gradient(180deg, #849E9A 0%, #205072 100%);
-  width:100vw;
-  height:180vw;
+  width:99vw;
+  height:120.5vw;
  }
- 
- .tab {
- margin-left: 10em;
- }
+
 
  .reg-form-fields {
   text-align: left;
@@ -307,14 +313,23 @@ h6 {
  .reg-form-fields input[type=text],
  .reg-form-fields input[type=password]{
   margin-bottom: 10px;
-  padding-left: 100px;
+  padding-left: 600px;
+  padding-top: 10px;
+  font-size: large;
+ }
+
+
+ .reg-form-shorter-fields input[type=text],
+ .reg-form-shorter-fields input[type=password]{
+  margin-bottom: 10px;
+  padding-left: 33px;
   padding-top: 10px;
   font-size: large;
  }
 
  .signupHero input[type=button] {
   position: absolute;
-  right: 450px;
+  right: 500px;
   width: 250px;
   height: 50px;
   display: inline-block;
