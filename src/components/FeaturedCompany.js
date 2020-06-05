@@ -14,9 +14,8 @@ export default class FeaturedCompany extends Component {
         return (
             <section className ="featured-rooms">
                 <Title title="featured stock"/>
-                <div className="featured0rooms-center">
+                <div className="featured-rooms-center">
                     {loading?<Loading/>:companies}                    
-
                 </div>
             
             </section>
