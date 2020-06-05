@@ -7,15 +7,19 @@ import Title from "./Title"
 export default class FeaturedCompany extends Component {
     static contextType = CompanyContext
     render() {
-        const {featuredCompanies: companies}  = this.context
-        
+        let {loading,featuredCompanies: companies}  = this.context
+        companies = companies.map(company=>{
+            return <Company key={company.id} company={company} />
+        })
         return (
-            <div>
-                <h2>
-                Hello From featured company</h2> 
-                <Company></Company>
-                <Loading/>
-            </div>
+            <section className ="featured-rooms">
+                <Title title="featured stock"/>
+                <div className="featured0rooms-center">
+                    {loading?<Loading/>:companies}                    
+
+                </div>
+            
+            </section>
         )
     }
 }

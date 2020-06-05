@@ -10,6 +10,7 @@ import Payment from './pages/payment';
 import Profile from './pages/profile';
 import About from './pages/aboutus';
 import Tutorial from './pages/Tutorial/basic'
+import SingleCompany from './pages/single-company'
 
 import {
   BrowserRouter as Router,
@@ -30,7 +31,7 @@ function App() {
         <Route exact path="/login" component={Login} />
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/explore/" component={Explore} />
-        <Route exact path="/company" component={Company} />
+        <Route exact path="/explore/:slug" component={SingleCompany} />
         <Route exact path="/tutorial/basic" component={Tutorial} />
         <Route exact path="/aboutus" component={About} />
         <Route exact path="/payment" component={Payment} />

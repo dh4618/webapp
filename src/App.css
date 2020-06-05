@@ -335,9 +335,8 @@ h6 {
 }
 
 .company-logo {
-  height: 100px;
-  width: auto;
-  padding-top: 1rem;
+  width: 200px;
+  display: flex;
 }
 
 .search input[type=text]{
