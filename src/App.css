@@ -313,7 +313,7 @@ text-align: center;
  .reg-form-fields input[type=text],
  .reg-form-fields input[type=password]{
   margin-bottom: 10px;
-  padding-left: 600px;
+  padding-right: 600px;
   padding-top: 10px;
   font-size: large;
  }
@@ -322,7 +322,7 @@ text-align: center;
  .reg-form-shorter-fields input[type=text],
  .reg-form-shorter-fields input[type=password]{
   margin-bottom: 10px;
-  padding-left: 33px;
+  padding-right: 33px;
   padding-top: 10px;
   font-size: large;
  }
