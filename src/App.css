@@ -188,6 +188,18 @@ h6 {
   justify-content: center;
 }
 
+.roomsHero {
+  min-height: calc(100vh - 66px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roomsHero {
+
+  min-height: 60vh;
+}
+
 /* Home Page */
 .home {
   height: 54vw;
