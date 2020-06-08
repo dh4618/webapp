@@ -62,4 +62,12 @@ class CompanyProvider extends Component {
 
 const CompanyConsumer = CompanyContext.Consumer;
 
+export function withCompanyConsumer(Component) {
+    return function ConsumerWrapper(props) {
+        return <CompanyConsumer>
+            {value =><Component {...props} context={value}/>}
+        </CompanyConsumer>
+    }
+}
+
 export{CompanyProvider,CompanyConsumer, CompanyContext};

@@ -1,7 +1,7 @@
 import React from "react"
 import Hero from "../components/Hero"
 import Banner from "../components/Banner"
-import ExploreContainer from "../components/ExploreContainer"
+import CompaniesContainer from "../components/CompaniesContainer"
 
 
 const explore = () => {
@@ -22,11 +22,7 @@ const explore = () => {
         </Banner>
       </Hero>
 
-      <div className="filter">
-        Filters: Price, Economic Sector, Industry
-      </div>
-      <ExploreContainer/>
-      
+      <CompaniesContainer></CompaniesContainer>
       </div>
     )
 }
