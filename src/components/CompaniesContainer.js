@@ -10,10 +10,10 @@ function CompaniesContainer({context}){
         return <Loading/>
        }
     return (
-        <div>
+        <>
         <CompaniesFilter companies={companies}></CompaniesFilter>
         <CompaniesList companies={sortedCompanies}></CompaniesList>
-        </div>
+        </>
     )
 }
 export default withCompanyConsumer(CompaniesContainer);
