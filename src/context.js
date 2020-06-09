@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import items from "./data"
+import { ThemeProvider } from 'styled-components';
 const CompanyContext = React.createContext();
 
 //Provider allow all component in the component tree to access it 
@@ -53,16 +54,26 @@ class CompanyProvider extends Component {
         return company;
     };
 
-    handgleChange = event => {
-        const sector = event.target.sector
-        const subindustry = event.target.subindustry
+    handleChange = event => {
+        const target = event.target
+        const value = target.value
         const name = event.target.name
-        const value = event.target.value
-        console.log(sector,name,subindustry,value)
+        this.setState({
+            [name]:value
+        }, this.filterCompanies)
     }
 
     filterCompanies = () => {
-        console.log('hello');
+        let{
+            companies, sector, subindustry, price
+        } = this.state
+        let tempCompany = [...companies];
+        if(sector !=='all') {
+            tempCompany = tempCompany.filter(company=>company.sector===sector)
+        }
+        this.setState({
+            sortedCompanies:tempCompany
+        })
     }
 
 
@@ -72,7 +83,7 @@ class CompanyProvider extends Component {
             value={{
                 ...this.state, 
                 getCompany:this.getCompany,
-                handgleChange: this.handgleChange
+                handleChange: this.handleChange
                 }}
             >
                 {this.props.children}

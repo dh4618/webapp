@@ -13,10 +13,15 @@ const getUnique = (items, value) => {
 export default function CompaniesFilter({companies}) {
     const context = useContext(CompanyContext);
     const {
-        handleChange, sector, subindustry, price,minPrice, maxPrice,
+        handleChange, 
+        sector, 
+        subindustry, 
+        price,
+        minPrice, 
+        maxPrice
     } = context;
 
-    //get unique options
+    //get unique sector
     let sectors = getUnique(companies,'sector');
     sectors=['all', ...sectors];
 
@@ -24,6 +29,7 @@ export default function CompaniesFilter({companies}) {
         return <option value={item} key={index}>{item}</option>
     })
 
+    //get unique subindustry
     let subindustries = getUnique(companies, 'subindustry');
     subindustries=['all', ...subindustries];
     subindustries = subindustries.map((item,index) => {
@@ -42,7 +48,8 @@ export default function CompaniesFilter({companies}) {
                         id="sector" 
                         value={sector} 
                         className="form-control" 
-                        onChange={handleChange}>
+                        onChange={handleChange}
+                    >
                     {sectors}
                     </select>
                        
@@ -57,10 +64,10 @@ export default function CompaniesFilter({companies}) {
                         id="subindustry" 
                         value={subindustry} 
                         className="form-control" 
-                        onChange={handleChange}>
+                        onChange={handleChange}
+                    >
                     {subindustries}
                     </select>
-                       
                 </div>
                 {/*end select subindustry*/}
             </form>
