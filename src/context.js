@@ -71,6 +71,10 @@ class CompanyProvider extends Component {
         if(sector !=='all') {
             tempCompany = tempCompany.filter(company=>company.sector===sector)
         }
+
+        if(subindustry!=='all') {
+            tempCompany = tempCompany.filter(company=>company.subindustry===subindustry)
+        }
         this.setState({
             sortedCompanies:tempCompany
         })
