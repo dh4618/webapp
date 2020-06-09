@@ -5,7 +5,7 @@ import { CompanyProvider } from "../context";
 import ExploreCard from "./ExploreCard"
 
 export default function Company({company}) {
-    const{name,slug,images,subindustry,sector} = company;
+    const{name,slug,images,subindustry,sector,price} = company;
     
     return (
         <article className="company">
@@ -24,6 +24,7 @@ Company.propTypes ={
         slug:PropTypes.string.isRequired,
         sector:PropTypes.string.isRequired,
         subindustry:PropTypes.string.isRequired,
+        price:PropTypes.number.isRequired,
         images:PropTypes.arrayOf(PropTypes.string).isRequired,
     })
 }
