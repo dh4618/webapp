@@ -9,18 +9,28 @@ class CompanyProvider extends Component {
         companies:[],
         sortedCompanies:[],
         featuredCompanies:[],
-        loading:true //useful when we are using the external data from contentful
+        loading:true, //useful when we are using the external data from contentful
+        sector: 'all',
+        subindustry: 'all',
+        price:0,
+        minPrice:0,
+        maxPrice:0
     };
     //getData
     componentDidMount() {
         //this.getData
         let companies = this.formatData(items);
         let featuredCompanies = companies.filter(company => company.featured ===true);
+        let maxPrice = Math.max(...companies.map(item => item.price));
+        
+    
         this.setState({
             companies, 
             featuredCompanies, 
             sortedCompanies:companies, 
-            loading:false
+            loading:false,
+            price:maxPrice,
+            maxPrice,
         });
 
     }
@@ -41,6 +51,18 @@ class CompanyProvider extends Component {
         let tempCompany = [...this.state.companies];
         const company = tempCompany.find((company)=>company.slug === slug)
         return company;
+    };
+
+    handgleChange = event => {
+        const sector = event.target.sector
+        const subindustry = event.target.subindustry
+        const name = event.target.name
+        const value = event.target.value
+        console.log(sector,name,subindustry,value)
+    }
+
+    filterCompanies = () => {
+        console.log('hello');
     }
 
 
@@ -49,7 +71,8 @@ class CompanyProvider extends Component {
             <CompanyContext.Provider 
             value={{
                 ...this.state, 
-                getCompany:this.getCompany
+                getCompany:this.getCompany,
+                handgleChange: this.handgleChange
                 }}
             >
                 {this.props.children}

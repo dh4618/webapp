@@ -12,6 +12,7 @@ export default [
       slug: "facebook",
       sector: "social",
       subindustry: "communication",
+      price:100,
       featured:true,
       wishlist: false,
       description:
@@ -37,6 +38,7 @@ export default [
       slug: "AE",
       sector: "clothings",
       subindustry: "clothing",
+      price: 200,
       featured:true,
       wishlist: false,
       description:

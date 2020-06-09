@@ -14,10 +14,8 @@ export default function CompaniesList({companies}) {
     }
 
     return (
-        
-      
         <section className="roomslist">
-            <div className="roomlist-center">
+            <div className="roomslist-center">
                 {
                     companies.map(item => {
                         return <Company key={item.id} company={item}/>
