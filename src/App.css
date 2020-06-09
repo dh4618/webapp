@@ -31,11 +31,13 @@ h1 {
 h2 {
   font-size: 2em;
   margin-bottom: 0.75em;
+  text-align: center;
+  letter-spacing: 3px;
 }
 h3 {
   font-size: 1.5em;
   line-height: 1;
-  margin-bottom: 1em;
+ 
 }
 h4 {
   font-size: 1.2em;
@@ -74,6 +76,11 @@ h6 {
   text-align: center;
   margin-top: 3rem;
 }
+
+.loading-gif {
+  width : 100px;
+  height:auto;
+}
 .error {
   text-align: center;
   text-transform: uppercase;
@@ -105,6 +112,18 @@ h6 {
     display: flex;
     padding-left: 10px;
     justify-content: space-between;
+  }
+
+  .nav-logo {
+    font-family: "Rock Salt";
+    font-size: small;
+    margin-left: 10px;
+    display: inline-block;
+    color: var(--mainBlack);
+    padding: 0.4rem 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    
   }
   .nav-btn {
     width: 3rem;
@@ -162,7 +181,6 @@ h6 {
 
 /* Hero */
 .defaultHero,
-.roomsHero,
 .exploreHero{
   background: url("./assets/images/welcome.svg") center/cover no-repeat;
   display: flex;
@@ -171,13 +189,46 @@ h6 {
 }
 
 .roomsHero {
-  background-image: url("./assets/images/facebook.png");
-  min-height: 50vh;
+  min-height: calc(100vh - 66px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roomsHero {
+
+  min-height: 60vh;
+}
+
+/* Home Page */
+.home {
+  height: 54vw;
+  background: linear-gradient(90deg, #329D9C 0%, #56C5A4 70%);
 }
 
 .exploreHero{
   background-image: url("./assets/images/explorebackgrond.jpg");
   color: white;
+}
+
+.loginHero{
+  width: 600px;
+  height: 250px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -125px;
+  margin-left: -300px;
+  padding-top: 25px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(83, 83, 83);
+  border-radius: 10px;
+  line-height: 3rem;
+}
+
+.loginHero input[type=submit] {
+  margin-right: 0;
 }
 
 /* Banner */
@@ -189,6 +240,7 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  
 }
 .banner h1 {
   font-size: 2.5rem;
@@ -244,17 +296,14 @@ h6 {
   background-color: yellow;
   font-size: large;
 }
-/* Home Page */
-.home {
-  background: linear-gradient(90deg, #329D9C 0%, #56C5A4 70%);
-}
+
 
 .container {
-  width: 80vw;
+  width: 70vw;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-right: 90px;
-  margin-left: 90px;
+  position: absolute;
+  top:150px;
+  left: 180px;
   padding-top: 25px;
   background-color: white;
   box-shadow: 7px -7px 5px rgb(83, 83, 83);
@@ -278,42 +327,154 @@ h6 {
   letter-spacing: 4px;
 }
 
+
+
 /*Explore Page*/
-.company-cards-container{ 
-  flex-wrap:  wrap;
-  justify-content: space-evenly; 
-  align-content: space-around;
-}
 .company-card {
   width: 200px;
   height: 300px;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-top: 2rem;
-  background-color: rgb(189, 188, 188);
-  box-shadow: 3px 3px 2px rgb(83, 83, 83);
+  background-color: rgb(240, 236, 236);
+  box-shadow: 3px 3px 2px rgb(8, 23, 65);
   border-radius: 10px;
-  line-height: 1rem;  
-  text-align: center;
-
+  line-height: 3px;  
+  
+ 
 }
+
+
+
+.company-card:hover {
+  box-shadow: 1px 1px 1px grey;
+}
+
+.company-card-info {
+  letter-spacing: 1px;
+  text-align: center;
+}
+
 
 .company-logo {
-  height: 100px;
-  width: auto;
-  padding-top: 1rem;
+  width: 200px;
+  display: flex;
 }
 
+.search input[type=text]{
+  float: right;
+  padding: 5px 100px;
+  border: none;
+  font-size: 15px;
+}
+
+.search input[type=submit]{
+  float: right;
+  padding: 5px 50px;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(122, 126, 129);
+  color: #F2F2F2;
+}
+
+.filter {
+  font-size: 50px;
+  text-align: center;
+}
+
+.addto-wishlist {
+  display: inline-block;
+  width: 150px;
+  height: 10px;
+  
+  text-decoration: none;
+  letter-spacing: 0;
+  color: var(--mainBlack);
+  background: rgb(247, 169, 35);
+  box-shadow: 1px 1px 1px grey;
+  padding-top: 8px;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.addto-wishlist:hover {
+  box-shadow: none;
+
+}
 
 /* login Page */
 .login {
-  background-color: orange;
+  background: linear-gradient(130deg, #56C596 50%, #205072 50%);
+  width:100vw;
+  height:55vw;
+ }
+
+ .form-fields {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: xx-large;
+ }
+
+
+ .form-fields input[type=text],
+ .form-fields input[type=password]{
+  margin-left:10px;
+  margin-bottom: 10px;
+  padding-left: 100px;
+  padding-top: 10px;
   font-size: large;
-}
+ }
+
+ .loginHero input[type=button] {
+  position: absolute;
+  right: 100px;
+  width: 100px;
+  height: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: medium;
+  letter-spacing: var(--mainSpacing);
+  color: white;
+  background: rgb(247, 169, 35);
+  border: none;
+  box-shadow: 1px 1px 1px grey;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 3px;
+ }
+
+ 
 
 /* Payment */
 .payment {
   background-color: pink;
+  position:relative;
+  top:100px;
+  font-size: large;
+}
+
+/* about us */
+.aboutus {
+  background-color: rgb(59, 122, 88);
+  position:relative;
+  top:100px;
+  font-size: large;
+}
+
+/* profile */
+.profile {
+  background-color: rgb(47, 49, 165);
+  position:relative;
+  top:100px;
+  font-size: large;
+}
+
+/* tutorial */
+..tutorial {
+  background-color: rgb(150, 112, 180);
+  position:relative;
+  top:100px;
   font-size: large;
 }
 
@@ -341,6 +502,7 @@ h6 {
 }
 .services h6 {
   letter-spacing: var(--mainSpacing);
+  text-transform: uppercase;
 }
 .services p {
   width: 80%;
@@ -363,14 +525,23 @@ h6 {
 
 .featured-rooms {
   padding: 5rem 0;
+  background: linear-gradient(50deg, #4b6cb7 0%, #182848 70%);
+  color: white;
+  letter-spacing: 4px;
 }
-.featured-rooms-center {
+.featured-rooms-center a{
   width: 80vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 40px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+
+  
+
+  
 }
 @media screen and (min-width: 776px) {
   .featured-rooms-center {
@@ -386,21 +557,19 @@ h6 {
 }
 /* end pf featured rooms */
 /* room */
-.room {
+.company {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
-}
-.room:hover {
-  box-shadow: var(--darkShadow);
+
 }
 
-.img-container {
-  position: relative;
-}
+
 .img-container img {
-  width: 100%;
+  width: 100px;
   display: block;
-  transition: var(--mainTransition);
+
+  border-radius: 15px;
+ 
 }
 .price-top {
   position: absolute;
@@ -427,25 +596,14 @@ h6 {
   transform: scale(0);
   transition: all 0.3s linear;
 }
-.img-container:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-.img-container:hover img {
-  opacity: 0.3;
-}
-.img-container:hover .price-top {
-  opacity: 0;
-}
-.img-container:hover .room-link {
-  transform: translate(-50%, -50%) scale(1);
-}
+
 .room-info {
   background: var(--darkGrey);
   text-transform: capitalize;
   padding: 0.5rem 0;
   text-align: center;
   font-weight: 700;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: 0;
 }
 /* end of room  */
 /* single room*/

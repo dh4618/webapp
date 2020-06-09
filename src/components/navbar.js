@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import {Link} from 'react-router-dom'
 import {AiOutlineBars} from 'react-icons/ai'
 
@@ -16,9 +15,10 @@ class NavBar extends Component {
             <nav className ="navbar">
                 <div className ="nav-center">
                 <div className ="nav-header">
-                <Link to="/">
-                    Paskala
-                </Link>
+                <div className ="nav-logo">
+                <Link to="/explore" className="nav-logo">Paskala</Link>
+                </div>
+                
                 <button type="button"
               className="nav-btn"
               onClick={this.handleToggle}>
