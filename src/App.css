@@ -249,6 +249,23 @@ h6 {
   line-height: 3rem;
 }
 
+.FAQHero{
+  width: 1189px;
+  height: 1700px;
+  margin: 0 auto;
+  position: absolute;
+  top: 41px;
+  left: 388px;
+  horizontal-align:middle;
+  margin-top: -125px;
+  margin-left: -300px;
+  padding-top: 25px;
+  background-color: #F2F2F2;
+  box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  line-height: 3rem;
+}
+
 /* Banner */
 .banner {
   display: inline-block;
@@ -537,12 +554,11 @@ text-align: center;
   font-size: large;
 }
 
-/* tutorial */
-..tutorial {
-  background-color: rgb(150, 112, 180);
-  position:relative;
-  top:100px;
-  font-size: large;
+/* FAQ */
+.FAQ {
+  background: linear-gradient(180deg, #2F778D 0%, #56C596 100%);
+  width:99vw;
+  height:120.5vw;
 }
 
 /* services */

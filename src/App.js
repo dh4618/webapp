@@ -8,7 +8,7 @@ import Error from './pages/error';
 import Payment from './pages/payment';
 import Profile from './pages/profile';
 import About from './pages/aboutus';
-import Tutorial from './pages/Tutorial/basic'
+import FAQ from './pages/FAQ'
 import SingleCompany from './pages/single-company'
 
 import {
@@ -31,7 +31,7 @@ function App() {
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/explore/" component={Explore} />
         <Route exact path="/explore/:slug" component={SingleCompany} />
-        <Route exact path="/tutorial/basic" component={Tutorial} />
+        <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/aboutus" component={About} />
         <Route exact path="/payment" component={Payment} />
         <Route component={Error} />
