@@ -4,6 +4,7 @@ import Banner from '../components/Banner'
 import {Link} from 'react-router-dom'
 import {CompanyContext} from "../context" 
 import StyledHero from "../components/StyledHero"
+import Stock from "../components/Stock"
 
 export default class single_company extends Component {
    //Accessing the slug
@@ -45,7 +46,7 @@ export default class single_company extends Component {
                </Link>
            </StyledHero>
            <section className="single-room">
-            <div><h1>live graph</h1></div>
+            <div><h1><Stock/></h1></div>
                <div className="single-room-info">
                    
                    <article className="desc">
