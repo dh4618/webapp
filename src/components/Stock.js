@@ -49,11 +49,11 @@ class Stock extends Component {
               <Plot
              data={[
                 {
-            x: this.state.stockChartXValues,
-            y: this.state.stockChartYValues,
-            type: 'scatter',
-            mode: 'lines+markers',
-            marker: {color: 'red'},
+                x: this.state.stockChartXValues,
+                y: this.state.stockChartYValues,
+                type: 'scatter',
+                mode: 'lines+markers',
+                marker: {color: 'red'},
              }
              ]}
         layout={ {width: 800, height: 500, title: 'Stock'} }

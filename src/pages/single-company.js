@@ -35,7 +35,9 @@ export default class single_company extends Component {
         const {name,
             description,
             sector,
-            subindustry,images} = company
+            subindustry,
+            symbol,
+            images} = company
     
         return (
            <>
@@ -55,6 +57,7 @@ export default class single_company extends Component {
                     </article>
                     <article className="info">
                        <h3>info</h3>
+                       <h6>stock symbol: {symbol}</h6>
                        <h6>subindustry: {subindustry}</h6>
                        <h6>sector: {sector}</h6>
                     </article>

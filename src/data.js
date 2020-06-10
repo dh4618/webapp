@@ -10,6 +10,7 @@ export default [
     fields: {
       name: "facebook",
       slug: "facebook",
+      symbol:"FB",
       sector: "social",
       subindustry: "communication",
       price:100,
@@ -36,6 +37,7 @@ export default [
     fields: {
       name: "AE",
       slug: "AE",
+      symbol:"AEO",
       sector: "clothings",
       subindustry: "clothing",
       price: 200,
