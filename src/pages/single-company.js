@@ -38,6 +38,7 @@ export default class single_company extends Component {
             subindustry,
             symbol,
             images} = company
+      
     
         return (
            <>
@@ -48,7 +49,7 @@ export default class single_company extends Component {
                </Link>
            </StyledHero>
            <section className="single-room">
-            <div><h1><Stock/></h1></div>
+            <div><h1><Stock stockSymbol={`${symbol}`} /></h1></div>
                <div className="single-room-info">
                    
                    <article className="desc">
