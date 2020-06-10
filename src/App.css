@@ -695,6 +695,13 @@ text-align: center;
   grid-template-columns: 1fr;
   margin: 2rem auto;
 }
+
+.tips-box :hover{
+  background: orange;
+  height: 10vw;
+  width: 10vw;
+
+}
 .desc,
 .info {
   margin: 1rem 0;
@@ -824,3 +831,34 @@ text-align: center;
   }
 }
 /* end of rooms fitler*/
+
+container,
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  
+  margin: 60px auto 0;
+  display: flex;
+}
+
+.wrapper {
+  height: 150px;
+  width: 150px;
+  background-color: #666;
+}
+
+.innerBox {
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+  background-color: #222;
+  display: none;
+}
+
+.container.show .innerBox {
+  display: block;
+}

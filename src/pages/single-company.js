@@ -49,7 +49,7 @@ export default class single_company extends Component {
                </Link>
            </StyledHero>
            <section className="single-room">
-            <div className="stock-graph"><Stock stockSymbol={`${symbol}`} /></div>
+            <div className="stock-graph"><Stock company={company}/></div>
                <div className="single-room-info">
                    
                    <article className="desc">
