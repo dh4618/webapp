@@ -404,11 +404,7 @@ text-align: center;
   box-shadow: 3px 3px 2px rgb(8, 23, 65);
   border-radius: 10px;
   line-height: 3px;  
-  
- 
 }
-
-
 
 .company-card:hover {
   box-shadow: 1px 1px 1px grey;
@@ -627,7 +623,6 @@ text-align: center;
 .company {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
-
 }
 
 
@@ -677,6 +672,10 @@ text-align: center;
 
 .single-room {
   padding: 5rem 0 0 0;
+}
+
+.stock-graph {
+  text-align: center;
 }
 .single-room-images {
   width: 80vw;
