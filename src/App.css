@@ -696,12 +696,20 @@ text-align: center;
   margin: 2rem auto;
 }
 
-.tips-box :hover{
-  background: orange;
-  height: 10vw;
-  width: 10vw;
-
+.tippy {
+  background-color: rgb(201, 144, 37);
 }
+
+
+
+.tips-button {
+  background: transparent;
+  border: none;
+  display: inline-block;
+  position: relative;
+  
+}
+
 .desc,
 .info {
   margin: 1rem 0;

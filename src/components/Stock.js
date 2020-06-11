@@ -23,7 +23,7 @@ class Stock extends Component {
            
     }
 
-   
+   //Retreiving data to draw the graph
     fetchStock() {
         const pointerToThis = this;
         const API_KEY =  'LZ13IXMNT9YSEF06';
@@ -67,7 +67,6 @@ class Stock extends Component {
                        
                    })
 
-                  
                 }
             )
     }
@@ -88,11 +87,37 @@ class Stock extends Component {
         layout={ {width: 1000, height: 500 } }
       />
       <div className="stock-recent-price">
-          Updated:
-          <Tips/>
-          <p>Open: ${this.state.mostRecentPrice_Open}
-           Close: ${this.state.mostRecentPrice_Close}</p>
-          <p>High: ${this.state.mostRecentPrice_High}   Low: ${this.state.mostRecentPrice_Low}</p>
+        <h5>Updated:</h5>
+          
+        <p>
+              <Tips explanation="The opening price is the 
+            price at which a security first trades upon 
+            the opening of an exchange on a trading day; 
+            for example, the New York Stock Exchange (NYSE) 
+            opens at precisely 9:30 a.m. Eastern time. The 
+            price of the first trade for any listed stock 
+            is its daily opening price."/>
+            Open: ${this.state.mostRecentPrice_Open}
+        </p>
+
+        <p> 
+            <Tips explanation="Closing price generally refers to the 
+            last price at which a stock trades during a regular trading 
+            session. For many U.S. markets, regular trading sessions run 
+            from 9:30 a.m. to 4:00 p.m. Eastern Time."/>
+            Close: ${this.state.mostRecentPrice_Close}
+        </p>
+
+        <p>
+        <Tips word="Open" explanation="The opening price is the 
+            price at which a security first trades upon 
+            the opening of an exchange on a trading day; 
+            for example, the New York Stock Exchange (NYSE) 
+            opens at precisely 9:30 a.m. Eastern time. The 
+            price of the first trade for any listed stock 
+            is its daily opening price."/>
+            High: ${this.state.mostRecentPrice_High} 
+        </p>
       </div>
         </>
         )

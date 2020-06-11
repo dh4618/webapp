@@ -5,15 +5,12 @@ import ExploreCard from "./ExploreCard"
 
 
 export default class Company extends Component {
-
-    // const{name,slug,images,subindustry,sector,price} = company;
-
-
     constructor(props) {
         super(props)
         this.state ={
             price:0
             };    
+            
         }
 
         
@@ -21,7 +18,7 @@ export default class Company extends Component {
             this.fetchPrice();  
         }
 
-
+        //obtaining the price for the company
         fetchPrice() {
             const pointerToThis = this;
             const API_KEY =  'LZ13IXMNT9YSEF06';
@@ -54,7 +51,8 @@ export default class Company extends Component {
                 )
         }
     render() {
-        const {slug} = this.props;
+        const {slug} = this.props.company;
+        console.log("props",this.props.company)
         return (
             <div>
                  <article className="company">

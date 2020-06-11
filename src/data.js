@@ -1,6 +1,7 @@
 import img1 from "./assets/images/facebook.png";
 import img2 from "./assets/images/ae.png";
 
+ 
 
 export default [
   {
@@ -13,7 +14,7 @@ export default [
       symbol:"FB",
       sector: "social",
       subindustry: "communication",
-      price:100,
+      price:240.96,
       featured:true,
       wishlist: false,
       description:
@@ -40,7 +41,7 @@ export default [
       symbol:"AEO",
       sector: "clothings",
       subindustry: "clothing",
-      price: 200,
+      price: 12.45,
       featured:true,
       wishlist: false,
       description:
