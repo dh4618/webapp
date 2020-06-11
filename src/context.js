@@ -61,7 +61,8 @@ class CompanyProvider extends Component {
         const name = event.target.name
         this.setState({
             [name]:value
-        }, this.filterCompanies)
+        }, 
+        this.filterCompanies)
     }
 
     filterCompanies = () => {
