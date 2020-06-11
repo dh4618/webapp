@@ -13,7 +13,6 @@ class Stock extends Component {
             mostRecentPrice_Close: 0,
             mostRecentPrice_Low: 0,
             mostRecentPrice_High: 0,
-            
             };     
     
        

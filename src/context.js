@@ -46,6 +46,7 @@ class CompanyProvider extends Component {
         });
         return tempItems;
     }
+    
         //first get the list of companies to tempCompany
         //find the company that matches the slug, find is finding the first match and return an object
     getCompany =(slug) => {
