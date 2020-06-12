@@ -10,29 +10,37 @@ export default function tutorial2() {
             <br />
             <h2>Tutorial 2: How to read a stock chart?</h2>
           
-            <t1>Let's start with what investment actually is and why you should start investing NOW!
+            <t1>What is a stock chart?
             <br />
-            Investment involves steaking money with a company, government etc. in order to earn money on this money.
+            Let's take a look at a typical stock chart below:
             <br />
-            Investment can help with early retirement and quality of life.
-            <br / >
-            Risk is a valid worry when investing. Some investments are more riskier than others and there is usually a way to estimate the riskiness beforehand.
+            The series of letters after the name of the company is the ticker symbol, which identifies the company on the stock exchange. 
+            <br / > 
+            How to read a stock chart (in 4 steps)
             <br />
-            Types of Investments: Stocks, Bonds, Commodities, ETFs, Real Estate, Currency etc.
+            Step 1: identify the trend line
             <br />
-            Stock markets are where investments are bought and sold.
+            Use your trend line as a first-glance, high-level indicator of something to look into.
             <br />
-            Compounding causes your investment to grow exponentially over time, thus it is critical to invest even small sums as early as you can in life.
+            Step 2: Look for lines of support and resistance
             <br />
-            Trading is a risky form of short-term investment.
+            These are levels at which stock stays within over a given period of time. 
             <br />
-            Inflation is 2.5% a year, money reduces value on average 2.5% a year and thus if you leave money in an account rather than investing it, it is worth 2.5 less each year.
+            Knowing the lines of resistance can help you decide when to buy or sell a stock. However, it is subjective. 
             <br /> 
-            Diversification means investing in different geographies, industries and asset classes.
+            Step 3: Know when divideends and stock splits occur
+            <br />
+            A dividend is when the company (the board of directors) decides to give a portion of its earnings back to its shareholders. 
+            <br />
+            A stock split is a strategic move done by the company’s board of directors to issue more shares of stock to the public.
+            <br />
+            Step 4: Understanding historic trading volumes
+            <br />
+            With high volumes comes greater ease when buying or selling. If a lot of people are trading the stock that day, you should be able to buy or sell it quickly.
             <br /><br />
-            <Link to ="/FAQ"><input type="button" value="previous page" /></Link> 
-            <Link to ="/tutorial2"><input type="button" value="next page" /></Link>
             </t1>
+            <Link to ="/FAQ"><input type="button" value="previous page" /></Link>
+            
             </div> 
             </div>
         </div>
