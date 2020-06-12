@@ -1,5 +1,10 @@
 import img1 from "./assets/images/facebook.png";
 import img2 from "./assets/images/ae.png";
+import img3 from "./assets/images/aaron.png";
+import img4 from "./assets/images/appliedopto.jpg";
+import img5 from "./assets/images/biotelemetry.png"
+import img6 from "./assets/images/blackhill.png";
+
 
  
 
@@ -9,7 +14,7 @@ export default [
       id: "1"
     },
     fields: {
-      name: "facebook",
+      name: "Facebook",
       slug: "facebook",
       symbol:"FB",
       sector: "social",
@@ -36,7 +41,7 @@ export default [
       id: "2"
     },
     fields: {
-      name: "AE",
+      name: "American Eagle Outfitters",
       slug: "AE",
       symbol:"AEO",
       sector: "clothings",
@@ -56,5 +61,112 @@ export default [
         }
         ]
     }
+  },{
+    sys: {
+      id: "3"
+    },
+    fields: {
+      name: "Aaron's Inc.",
+      slug: "aaronsinc",
+      symbol:"AAN",
+      sector: "Consumer Discretionary",
+      subindustry: "Home Furnishing Retail",
+      price:48.4700,
+      featured:true,
+      wishlist: false,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+
+      images: [
+        {
+          fields: {
+            file: {
+              url: img3
+            }
+          }
+        }
+    ]
   }
+},
+{
+  sys: {
+    id: "4"
+  },
+  fields: {
+    name: "Applied Optoelect",
+    slug: "appliedoptoelect",
+    symbol:"AAOI",
+    sector: "Information Technology",
+    subindustry: "Communications Equipment",
+    price:9.7300,
+    featured:true,
+    wishlist: false,
+    description:
+      "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+
+    images: [
+      {
+        fields: {
+          file: {
+            url: img4
+          }
+        }
+      }
+  ]
+}
+},
+{
+  sys: {
+    id: "5"
+  },
+  fields: {
+    name: "BioTelemetry, Inc.",
+    slug: "biotelemetry",
+    symbol:"BEAT",
+    sector: "Health Care",
+    subindustry: "Healthcare Services",
+    price:50.1600,
+    featured:true,
+    wishlist: false,
+    description:
+      "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+
+    images: [
+      {
+        fields: {
+          file: {
+            url: img5
+          }
+        }
+      }
+  ]
+}
+},
+{
+  sys: {
+    id: "6"
+  },
+  fields: {
+    name: "Black Hills Corporation",
+    slug: "blackhillscorporation",
+    symbol:"BKH",
+    sector: "Utilities",
+    subindustry: "Multi-Utilities",
+    price:61.2100,
+    featured:false,
+    wishlist: false,
+    description:
+      "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+
+    images: [
+      {
+        fields: {
+          file: {
+            url: img6
+          }
+        }
+      }
+  ]
+}
+},
 ];
