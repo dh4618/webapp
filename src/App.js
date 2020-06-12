@@ -8,8 +8,9 @@ import Error from './pages/error';
 import Payment from './pages/payment';
 import Profile from './pages/profile';
 import About from './pages/aboutus';
-import FAQ from './pages/FAQ'
-import SingleCompany from './pages/single-company'
+import FAQ from './pages/FAQ';
+import tutorial2 from './pages/tutorial2';
+import SingleCompany from './pages/single-company';
 
 import {
   BrowserRouter as Router,
@@ -32,6 +33,7 @@ function App() {
         <Route exact path="/explore/" component={Explore} />
         <Route exact path="/explore/:slug" component={SingleCompany} />
         <Route exact path="/FAQ" component={FAQ} />
+        <Route exact path="/tutorial2" component={tutorial2} />
         <Route exact path="/aboutus" component={About} />
         <Route exact path="/payment" component={Payment} />
         <Route component={Error} />

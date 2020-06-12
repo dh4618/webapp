@@ -1,14 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-export default function FAQ() {
+export default function tutorial2() {
     return (
-        <div className="FAQ">
-            <div className="FAQHero">
+        <div className="tutorial2">
+            <div className="tutorial2Hero">
             <br /> <br/>
             <div className = "tab">
             <br />
-            <h2>Tutorial 1: What is investment? (with definition of basic terms)</h2>
+            <h2>Tutorial 2: How to read a stock chart?</h2>
           
             <t1>Let's start with what investment actually is and why you should start investing NOW!
             <br />
@@ -30,6 +30,7 @@ export default function FAQ() {
             <br /> 
             Diversification means investing in different geographies, industries and asset classes.
             <br /><br />
+            <Link to ="/FAQ"><input type="button" value="previous page" /></Link> 
             <Link to ="/tutorial2"><input type="button" value="next page" /></Link>
             </t1>
             </div> 
