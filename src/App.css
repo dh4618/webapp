@@ -59,6 +59,10 @@ t1 {
   font-size: 1.3em;
 }
 
+bold {
+  font-weight: bold;
+}
+
 .btn-primary {
 
   display: inline-block;
@@ -271,7 +275,7 @@ t1 {
 
 .tutorial2Hero{
   width: 1189px;
-  height: 3300px;
+  height: 3450px;
   margin: 0 auto;
   position: absolute;
   top: 41px;
@@ -613,7 +617,7 @@ text-align: center;
 .tutorial2 {
   background: linear-gradient(180deg, #2F778D 0%, #56C596 100%);
   width:99vw;
-  height:240vw;
+  height:250vw;
 }
 
  .tutorial2Hero input[type=button] {
