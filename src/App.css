@@ -31,7 +31,6 @@ h1 {
 h2 {
   font-size: 2em;
   margin-bottom: 0.75em;
-  text-align: center;
   letter-spacing: 3px;
 }
 h3 {
@@ -52,8 +51,12 @@ h5 {
 h6 {
   font-size: 1em;
   font-weight: bold;
-
   margin-bottom: 1.5em;
+}
+
+t1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
 }
 
 .btn-primary {
@@ -328,7 +331,8 @@ h6 {
 
 
 .tab {
-margin-left: 10em;
+  margin-left: 10em;
+  margin-right: 10em;
 }
 
 .centralise{
@@ -347,6 +351,14 @@ text-align: center;
   text-align: left;
   letter-spacing: 2px;
   font-size: xx-large;
+ }
+
+ .reg-form-fields input[type=text],
+ .reg-form-fields input[type=password]{
+  margin-bottom: 10px;
+  padding-right: 600px;
+  padding-top: 10px;
+  font-size: large;
  }
 
  .reg-form-shorter-fields input[type=text],
@@ -504,7 +516,7 @@ text-align: center;
  .form-fields input[type=password]{
   margin-left:10px;
   margin-bottom: 10px;
-  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 10px;
   font-size: large;
  }
@@ -559,6 +571,10 @@ text-align: center;
   background: linear-gradient(180deg, #2F778D 0%, #56C596 100%);
   width:99vw;
   height:120.5vw;
+}
+
+.ul {
+  list-style-type: square;
 }
 
 /* services */
