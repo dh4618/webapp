@@ -271,7 +271,7 @@ t1 {
 
 .tutorial2Hero{
   width: 1189px;
-  height: 1700px;
+  height: 3300px;
   margin: 0 auto;
   position: absolute;
   top: 41px;
@@ -613,7 +613,7 @@ text-align: center;
 .tutorial2 {
   background: linear-gradient(180deg, #2F778D 0%, #56C596 100%);
   width:99vw;
-  height:120.5vw;
+  height:240vw;
 }
 
  .tutorial2Hero input[type=button] {
