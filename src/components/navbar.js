@@ -30,6 +30,7 @@ class NavBar extends Component {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/explore">Explore</Link></li>
                     <li><Link to="/FAQ">Learning</Link></li>
+                    <li><Link to="/discussion">Discussion</Link></li>
                     <li><Link to="/profile">My Profile</Link></li>
                     <li><Link to="/aboutus">About Us</Link></li>
                 </ul>
