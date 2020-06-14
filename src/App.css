@@ -31,7 +31,6 @@ h1 {
 h2 {
   font-size: 2em;
   margin-bottom: 0.75em;
-  text-align: center;
   letter-spacing: 3px;
 }
 h3 {
@@ -52,8 +51,16 @@ h5 {
 h6 {
   font-size: 1em;
   font-weight: bold;
-
   margin-bottom: 1.5em;
+}
+
+t1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+}
+
+bold {
+  font-weight: bold;
 }
 
 .btn-primary {
@@ -249,6 +256,40 @@ h6 {
   line-height: 3rem;
 }
 
+.FAQHero{
+  width: 1189px;
+  height: 1700px;
+  margin: 0 auto;
+  position: absolute;
+  top: 41px;
+  left: 388px;
+  horizontal-align:middle;
+  margin-top: -125px;
+  margin-left: -300px;
+  padding-top: 25px;
+  background-color: #F2F2F2;
+  box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  line-height: 3rem;
+}
+
+.tutorial2Hero{
+  width: 1189px;
+  height: 3450px;
+  margin: 0 auto;
+  position: absolute;
+  top: 41px;
+  left: 388px;
+  horizontal-align:middle;
+  margin-top: -125px;
+  margin-left: -300px;
+  padding-top: 25px;
+  background-color: #F2F2F2;
+  box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  line-height: 3rem;
+}
+
 /* Banner */
 .banner {
   display: inline-block;
@@ -311,7 +352,8 @@ h6 {
 
 
 .tab {
-margin-left: 10em;
+  margin-left: 10em;
+  margin-right: 10em;
 }
 
 .centralise{
@@ -332,8 +374,17 @@ text-align: center;
   font-size: xx-large;
  }
 
+ .reg-form-fields input[type=text],
+ .reg-form-fields input[type=password]{
+  margin-bottom: 10px;
+  padding-right: 600px;
+  padding-top: 10px;
+  font-size: large;
+ }
+
  .reg-form-shorter-fields input[type=text],
- .reg-form-shorter-fields input[type=password]{
+ .reg-form-shorter-fields input[type=password],
+ .reg-form-shorter-fields input[type=date]{
   margin-bottom: 10px;
   padding-right: 33px;
   padding-top: 10px;
@@ -487,7 +538,7 @@ text-align: center;
  .form-fields input[type=password]{
   margin-left:10px;
   margin-bottom: 10px;
-  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 10px;
   font-size: large;
  }
@@ -537,12 +588,58 @@ text-align: center;
   font-size: large;
 }
 
-/* tutorial */
-..tutorial {
-  background-color: rgb(150, 112, 180);
-  position:relative;
-  top:100px;
+/* FAQ */
+.FAQ {
+  background: linear-gradient(180deg, #2F778D 0%, #56C596 100%);
+  width:99vw;
+  height:120.5vw;
+}
+
+ .FAQHero input[type=button] {
+  position: absolute;
+  right: 0px;
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  text-decoration: underline;
   font-size: large;
+  letter-spacing: var(--mainSpacing);
+  color: blue;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 3px;
+ }
+
+/* tutorial2 */
+.tutorial2 {
+  background: linear-gradient(180deg, #2F778D 0%, #56C596 100%);
+  width:99vw;
+  height:250vw;
+}
+
+ .tutorial2Hero input[type=button] {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  text-decoration: underline;
+  font-size: large;
+  letter-spacing: var(--mainSpacing);
+  color: blue;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 0px;
+  padding-left: 0px;
+ }
+
+.right-aligned{
+  right: 0px;
 }
 
 /* services */

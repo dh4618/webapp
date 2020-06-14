@@ -29,8 +29,7 @@ export default function signup() {
             <div className="reg-form-shorter-fields"><input type="text" name="postcode" placeholder="Post code" /></div>
             Date of birth *<br />
             <div/>
-            <div className="reg-form-shorter-fields"><input type="text" name="DD" placeholder="DD" /> &emsp;<input type="text" name="MM" placeholder="MM" /> &emsp;<input type="text" name="YY" placeholder="YYYY"/>
-            </div>
+            <div className="reg-form-shorter-fields"><input type="date" name="DOB" /> </div>
             Email *<br />
             <div className="reg-form-fields"><input type="text" name="email"/></div>
             Phone number<br />
