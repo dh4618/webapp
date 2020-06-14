@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 
 const MainPageCard = () => {
     return (
-        <div className="container">
+        <div className="home_container">
             <div className="welcome"> Welcome to </div>
             <Logo/>
             <hr/>
