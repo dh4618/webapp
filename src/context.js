@@ -46,6 +46,7 @@ class CompanyProvider extends Component {
         });
         return tempItems;
     }
+    
         //first get the list of companies to tempCompany
         //find the company that matches the slug, find is finding the first match and return an object
     getCompany =(slug) => {
@@ -60,7 +61,8 @@ class CompanyProvider extends Component {
         const name = event.target.name
         this.setState({
             [name]:value
-        }, this.filterCompanies)
+        }, 
+        this.filterCompanies)
     }
 
     filterCompanies = () => {
@@ -75,6 +77,8 @@ class CompanyProvider extends Component {
         if(subindustry!=='all') {
             tempCompany = tempCompany.filter(company=>company.subindustry===subindustry)
         }
+
+        tempCompany = tempCompany.filter(company => company.price <= price);
         this.setState({
             sortedCompanies:tempCompany
         })

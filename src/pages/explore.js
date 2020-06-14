@@ -22,7 +22,7 @@ const explore = () => {
         </Banner>
       </Hero>
 
-      <CompaniesContainer></CompaniesContainer>
+      <CompaniesContainer/>
       </div>
     )
 }
