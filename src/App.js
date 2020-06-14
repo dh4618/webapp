@@ -11,6 +11,7 @@ import About from './pages/aboutus';
 import FAQ from './pages/FAQ';
 import tutorial2 from './pages/tutorial2';
 import SingleCompany from './pages/single-company';
+import Discussion from './pages/discussion'
 
 import {
   BrowserRouter as Router,
@@ -33,6 +34,7 @@ function App() {
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/explore/" component={Explore} />
         <Route exact path="/explore/:slug" component={SingleCompany} />
+        <Route exact path="/discussion" component={Discussion} />
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/tutorial2" component={tutorial2} />
         <Route exact path="/aboutus" component={About} />
