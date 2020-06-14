@@ -9,6 +9,7 @@ import Error from './pages/error';
 import Payment from './pages/payment';
 import Profile from './pages/profile';
 import About from './pages/aboutus';
+import Discussion from './pages/discussion'
 import Tutorial from './pages/Tutorial/basic'
 
 import {
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/explore/:slug" component={Facebook} />
         <Route exact path="/tutorial/basic" component={Tutorial} />
         <Route exact path="/aboutus" component={About} />
+        <Route exact path="/discussion" component={Discussion} />
         <Route exact path="/payment" component={Payment} />
         <Route component={Error} />
       </Switch>
