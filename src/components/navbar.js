@@ -26,7 +26,7 @@ class NavBar extends Component {
                 </button>
 
                 </div>
-                <ul className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}>
+                <ul className={this.state.isOpen ? "nav-links show-nav" : "nav-links"} onClick={this.handleToggle}>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/explore">Explore</Link></li>
                     <li><Link to="/FAQ">Learning</Link></li>
