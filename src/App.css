@@ -149,7 +149,7 @@ bold {
     color: black;
   }
   .nav-links {
-    height: 0;
+    height: 10px;
     overflow: hidden;
     transition: var(--mainTransition);
     list-style-type: none;
@@ -158,11 +158,11 @@ bold {
     
     display: block;
     text-decoration: none;
-    padding: 1rem 0;
+    padding: 2rem 0;
     color:white;
     transition: var(--mainTransition);
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 3px;
   }
@@ -171,13 +171,12 @@ bold {
   }
 
   .show-nav {
-    background: rgb(48, 46, 46);
+    background: rgb(87, 83, 83);
     height: 100vw;
-    width: 10vw;
+    width: 15vw;
     position: absolute;
+    top:2rem;
     z-index: auto;
- 
-    
   }
 
   
@@ -448,6 +447,9 @@ text-align: center;
 
 
 /*Explore Page*/
+.explorepage {
+  background :linear-gradient( white 0%, #96cea9 100%)
+}
 .company-card {
   width: 250px;
   height: 300px;
@@ -470,6 +472,9 @@ text-align: center;
 .company-logo {
   width: 200px;
   display: flex;
+  position: absolute;
+  top:1rem;
+  left: 1rem;
 }
 
 .search input[type=text]{
@@ -493,26 +498,27 @@ text-align: center;
   text-align: center;
 }
 
-.addto-wishlist {
+.add-to-wishlist {
   display: inline-block;
   width: 150px;
   height: 10px;
-  
+  margin-bottom: 0;
   text-decoration: none;
   letter-spacing: 0;
-  color: var(--mainBlack);
   background: rgb(247, 169, 35);
   box-shadow: 1px 1px 1px grey;
   padding-top: 8px;
-  padding-bottom: 3px;
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
   border-radius: 3px;
+
 }
 
 .addto-wishlist:hover {
   box-shadow: none;
+  position: absolute;
+  margin-bottom: 0rem;
 
 }
 
@@ -726,8 +732,10 @@ text-align: center;
 .img-container img {
   width: 100px;
   display: block;
-
-  border-radius: 15px;
+  position: relative;
+  top: 1rem;
+  border-radius: 5px;
+  margin-left: 30%;
  
 }
 .price-top {
