@@ -455,6 +455,11 @@ text-align: center;
 .company-card-info {
   letter-spacing: 1px;
   text-align: center;
+  padding: 1rem 0rem;
+}
+
+.company-card-detail {
+
 }
 
 
@@ -738,12 +743,13 @@ text-align: center;
 
 
 .img-container img {
-  width: 100px;
+  height: 90px;
+  width: 150px;
   display: block;
   position: relative;
   top: 1rem;
   border-radius: 5px;
-  margin-left: 30%;
+  margin-left: 50px;
  
 }
 .price-top {
