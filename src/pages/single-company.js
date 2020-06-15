@@ -62,11 +62,13 @@ export default class single_company extends Component {
                        <h6>subindustry: {subindustry}</h6>
                        <h6>sector: {sector}</h6>
                     </article>
+                    
                </div>
-
-
-
+               <div style={{textAlign:"center"}}>
+               <Link to="/payment"><button className="btn-primary">Invest</button></Link>
+               </div>
            </section>
+           
            </>
         )
     }

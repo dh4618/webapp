@@ -154,7 +154,7 @@ export default [
     symbol:"BKH",
     sector: "Utilities",
     subindustry: "Multi-Utilities",
-    price:61.2100,
+    price:57.89,
     featured:false,
     wishlist: false,
     description:
@@ -181,7 +181,7 @@ export default [
     symbol:"AAON",
     sector: "Industrials",
     subindustry: "Building Products",
-    price:61.2100,
+    price:53.9,
     featured:false,
     wishlist: false,
     description:
