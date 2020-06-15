@@ -43,12 +43,13 @@ export default class single_company extends Component {
         return (
            <>
            <StyledHero img={images[0]}>
-               <Banner title={`${name} `}> </Banner>
-               <Link to='/explore' className='btn-primary'>
+               <Link to='/explore' className='btn-primary' style={{marginTop:"20rem"}}>
                    Back to explore
                </Link>
            </StyledHero>
+        
            <section className="single-room">
+            <div style={{textAlign:"center"}}><h2>{name}</h2></div>
             <div className="stock-graph"><Stock company={company}/></div>
                <div className="single-room-info">
                    
@@ -64,7 +65,7 @@ export default class single_company extends Component {
                     </article>
                     
                </div>
-               <div style={{textAlign:"center"}}>
+               <div style={{textAlign:"center",marginBottom:"2rem"}}>
                <Link to="/payment"><button className="btn-primary">Invest</button></Link>
                </div>
            </section>

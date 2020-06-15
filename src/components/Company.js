@@ -10,7 +10,6 @@ export default class Company extends Component {
         this.state ={
             price:0
             };    
-            
         }
 
         
@@ -41,18 +40,14 @@ export default class Company extends Component {
                     
                        pointerToThis.setState({
                       
-                          price : temp_price[0]
-                        
-                           
+                          price : temp_price[0]                        
                        })
-    
-                
                     }
                 )
         }
     render() {
         const {slug} = this.props.company;
-        console.log("props",this.props.company)
+    
         return (
             <div>
                  <article className="company">

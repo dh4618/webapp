@@ -10,17 +10,17 @@ class Service extends Component {
             {
                 icon:<BsBook/>,
                 title:"learning",
-                info: "you can learn investing"
+                info: "Learn the basic stock knowledge to make your first move"
             },
             {
                 icon:<BsPeopleFill/>,
                 title:"community",
-                info: "build the community"
+                info: "Meet different people and see what they think"
             },
             {
                 icon:<FaMoneyBill/>,
                 title:"invest",
-                info: "grow your money"
+                info: "Start invest and grow your money"
             }
         ]
     }

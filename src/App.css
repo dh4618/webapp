@@ -63,6 +63,10 @@ bold {
   font-weight: bold;
 }
 
+.white-title {
+  color: white;
+  text-align: center;
+}
 .btn-primary {
   display: inline-block;
   text-decoration: none;
@@ -205,10 +209,6 @@ bold {
   background: linear-gradient(90deg, #329D9C 0%, #56C5A4 70%);
 }
 
-.exploreHero{
-  background-image: url("./assets/images/explorebackgrond.jpg");
-  color: white;
-}
 
 
 .loginHero{
@@ -417,6 +417,11 @@ text-align: center;
 
 
 /*Explore Page*/
+.exploreHero{
+  background-image: url("./assets/images/explorebackgrond.jpg");
+  color: white;
+}
+
 .explorepage {
   background :linear-gradient( white 0%, #96cea9 100%)
 }
@@ -438,11 +443,6 @@ text-align: center;
   text-align: center;
   padding: 1rem 0rem;
 }
-
-.company-card-detail {
-
-}
-
 
 .company-logo {
   width: 200px;
@@ -507,8 +507,6 @@ text-align: center;
 
 .addto-wishlist:hover {
   box-shadow: none;
-  
-
 }
 
 /* login Page */
@@ -585,7 +583,8 @@ text-align: center;
 }
 
 
-/* tutorial */
+
+/* tutorial2 */
 .tutorial {
   background: linear-gradient(180deg, #2F778D 0%, #56C596 100%);
   width:100vw;
@@ -664,7 +663,7 @@ text-align: center;
   letter-spacing: 4px;
 }
 .featured-rooms-center a{
-  width: 80vw;
+  width: 10vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -672,12 +671,9 @@ text-align: center;
   grid-column-gap: 40px;
   margin-top: 1rem;
   margin-left: 1rem;
-
-  
-
-  
+  margin-right: 1rem;  
 }
-@media screen and (min-width: 776px) {
+/* @media screen and (min-width: 776px) {
   .featured-rooms-center {
     width: 90vw;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -685,12 +681,12 @@ text-align: center;
 }
 @media screen and (min-width: 992px) {
   .featured-rooms-center {
-    width: 95vw;
+    width: 10vw;
     max-width: 1170px;
   }
-}
+} */
 /* end pf featured rooms */
-/* room */
+/* company */
 .company {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
@@ -707,7 +703,7 @@ text-align: center;
   margin-left: 50px;
  
 }
-.price-top {
+/* .price-top {
   position: absolute;
   top: 0;
   left: 0;
@@ -718,20 +714,20 @@ text-align: center;
   font-size: 0.5rem;
   text-align: center;
   transition: var(--mainTransition);
-}
+} */
 .price-top h6 {
   margin-bottom: 0;
   font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
-.room-link {
+/* .room-link {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: scale(0);
   transition: all 0.3s linear;
-}
+} */
 
 .room-info {
   background: var(--darkGrey);
