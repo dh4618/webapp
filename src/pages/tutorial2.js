@@ -22,7 +22,7 @@ export default function tutorial2() {
             <img src={img1} style={{maxWidth:800, height:'auto'}}></img>
             <br />
             The series of letters after the name of the company is the ticker symbol, which identifies the company on the stock exchange. 
-            <br / > <br />
+            <br /> <br />
             How to read a stock chart (in 4 steps)
             <br />
             <bold>Step 1: identify the trend line</bold>
