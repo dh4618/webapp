@@ -8,8 +8,8 @@ import img5 from "../assets/images/stock-trading-volumes.png";
 
 export default function tutorial2() {
     return (
-        <div className="tutorial2">
-            <div className="tutorial2Hero">
+        <div className="tutorial">
+            <div className="tutorialHero">
             <br /> <br/>
             <div className = "tab">
             <br />

@@ -263,36 +263,7 @@ bold {
   line-height: 3rem;
 }
 
-.tutorial2Hero{
-  /* width: 100vw;
-  height: 100vw;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  position: absolute;
-  top: 41px;
-  left: 388px;
-  horizontal-align:middle;
-  margin-top: -125px;
-  margin-left: -300px;
-  padding-top: 25px;
-  background-color: #F2F2F2;
-  box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  line-height: 3rem; */
 
-  width: 80vw;
-  height: auto;
-  margin: 0 auto;
-  background-color: white;
-  box-shadow: 5px 5px 5px rgb(83, 83, 83);
-  border-radius: 10px;
-  line-height: 3rem;
- 
-}
-
-.tutorial-img {
-  width: 55vw
-}
 
 /* Banner */
 .banner {
@@ -613,56 +584,29 @@ text-align: center;
   font-size: large;
 }
 
-/* FAQ */
-.FAQ {
-  background: linear-gradient(180deg, #2F778D 0%, #56C596 100%);
-  width:99vw;
-  height:120.5vw;
-}
 
- .FAQHero input[type=button] {
-  position: absolute;
-  right: 0px;
-  width: 250px;
-  height: 50px;
-  display: inline-block;
-  text-decoration: underline;
-  font-size: large;
-  letter-spacing: var(--mainSpacing);
-  color: blue;
-  background: transparent;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-align: center;
-  border-radius: 3px;
- }
-
-/* tutorial2 */
-.tutorial2 {
+/* tutorial */
+.tutorial {
   background: linear-gradient(180deg, #2F778D 0%, #56C596 100%);
   width:100vw;
   height:auto;
   padding-bottom: 3rem;
 }
 
- /* .tutorial2Hero input[type=button] {
-  position: absolute;
-  width: 250px;
-  height: 50px;
-  display: inline-block;
-  text-decoration: underline;
-  font-size: large;
-  letter-spacing: var(--mainSpacing);
-  color: blue;
-  background: transparent;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-align: left;
-  border-radius: 0px;
-  padding-left: 0px;
- } */
+.tutorialHero{
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(83, 83, 83);
+  border-radius: 10px;
+  line-height: 3rem;
+}
+
+.tutorial-img {
+  width: 55vw
+}
+
 
 .right-aligned{
   right: 0px;

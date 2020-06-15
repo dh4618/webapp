@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom'
 
 export default function FAQ() {
     return (
-        <div className="FAQ">
-            <div className="FAQHero">
+        <div className="tutorial">
+            <div className="tutorialHero">
             <br /> <br/>
             <div className = "tab">
             <br />
@@ -15,7 +15,7 @@ export default function FAQ() {
             Investment involves steaking money with a company, government etc. in order to earn money on this money.
             <br />
             Investment can help with early retirement and quality of life.
-            <br / >
+            <br />
             Risk is a valid worry when investing. Some investments are more riskier than others and there is usually a way to estimate the riskiness beforehand.
             <br />
             Types of Investments: Stocks, Bonds, Commodities, ETFs, Real Estate, Currency etc.
@@ -30,7 +30,7 @@ export default function FAQ() {
             <br /> 
             Diversification means investing in different geographies, industries and asset classes.
             <br /><br />
-            <Link to ="/tutorial2"><input type="button" value="next page" /></Link>
+            <Link to ="/tutorial2"><input className="btn-primary" type="button" value="next page" /></Link>
             </t1>
             </div> 
             </div>
