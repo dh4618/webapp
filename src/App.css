@@ -64,7 +64,6 @@ bold {
 }
 
 .btn-primary {
-
   display: inline-block;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
@@ -74,7 +73,9 @@ bold {
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
+  border: none;
 }
+
 .btn-primary:hover {
   background: transparent;
   color: grey;
@@ -226,10 +227,6 @@ bold {
   line-height: 3rem;
 }
 
-.loginHero input[type=submit] {
-  margin-right: 0;
-}
-
 
 
 .signupHero{
@@ -267,7 +264,7 @@ bold {
 }
 
 .tutorial2Hero{
-  width: 100vw;
+  /* width: 100vw;
   height: 100vw;
   margin-left: 10rem;
   margin-right: 10rem;
@@ -281,7 +278,20 @@ bold {
   background-color: #F2F2F2;
   box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  line-height: 3rem; */
+
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(83, 83, 83);
+  border-radius: 10px;
   line-height: 3rem;
+ 
+}
+
+.tutorial-img {
+  width: 55vw
 }
 
 /* Banner */
@@ -346,7 +356,7 @@ bold {
 
 
 .tab {
-  margin-left: 10em;
+  margin-left: 10rem;
   margin-right: 10em;
 }
 
@@ -478,7 +488,7 @@ text-align: center;
 
 .search input[type=text]{
   font-size: 1rem;
-  width: 30vw;
+  width: 28vw;
   padding-left: 0.3vw;
   position: absolute;
   left: 35vw;
@@ -631,11 +641,12 @@ text-align: center;
 /* tutorial2 */
 .tutorial2 {
   background: linear-gradient(180deg, #2F778D 0%, #56C596 100%);
-  width:99vw;
-  height:250vw;
+  width:100vw;
+  height:auto;
+  padding-bottom: 3rem;
 }
 
- .tutorial2Hero input[type=button] {
+ /* .tutorial2Hero input[type=button] {
   position: absolute;
   width: 250px;
   height: 50px;
@@ -651,7 +662,7 @@ text-align: center;
   text-align: left;
   border-radius: 0px;
   padding-left: 0px;
- }
+ } */
 
 .right-aligned{
   right: 0px;

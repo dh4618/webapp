@@ -19,7 +19,7 @@ export default function tutorial2() {
             <br />
             Let's take a look at a typical stock chart below:
             <br />
-            <img src={img1} style={{maxWidth:800, height:'auto'}}></img>
+            <img className="tutorial-img" src={img1} ></img>
             <br />
             The series of letters after the name of the company is the ticker symbol, which identifies the company on the stock exchange. 
             <br /> <br />
@@ -27,13 +27,13 @@ export default function tutorial2() {
             <br />
             <bold>Step 1: identify the trend line</bold>
             <br />
-            <img src={img2} style={{maxWidth:800, height:'auto'}}></img>
+            <img className="tutorial-img" src={img2}></img>
             <br />
             Use your trend line as a first-glance, high-level indicator of something to look into.
             <br /><br />
             <bold>Step 2: Look for lines of support and resistance</bold>
             <br />
-            <img src={img3} style={{maxWidth:800, height:'auto'}}></img>
+            <img className="tutorial-img" src={img3}></img>
             <br />
             These are levels at which stock stays within over a given period of time. 
             <br />
@@ -41,7 +41,7 @@ export default function tutorial2() {
             <br /> <br />
             <bold>Step 3: Know when divideends and stock splits occur</bold>
             <br />
-            <img src={img4} style={{maxWidth:800, height:'auto'}}></img>
+            <img className="tutorial-img" src={img4}></img>
             <br />
             A dividend is when the company (the board of directors) decides to give a portion of its earnings back to its shareholders. 
             <br />
@@ -49,12 +49,12 @@ export default function tutorial2() {
             <br /><br />
             <bold>Step 4: Understanding historic trading volumes</bold>
             <br />
-            <img src={img5} style={{maxWidth:800, height:'auto'}}></img>
+            <img className="tutorial-img" src={img5}></img>
             <br />
             With high volumes comes greater ease when buying or selling. If a lot of people are trading the stock that day, you should be able to buy or sell it quickly.
             <br /><br />
             </t1>
-            <Link to ="/FAQ"><input type="button" value="previous page" /></Link>
+            <Link to ="/FAQ" ><input className="btn-primary" type="button" value="previous page" /></Link>
             
             </div> 
             </div>
