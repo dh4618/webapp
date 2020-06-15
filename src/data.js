@@ -1,6 +1,6 @@
 import img1 from "./assets/images/facebook.png";
 import img2 from "./assets/images/ae.png";
-import img3 from "./assets/images/aaron.png";
+import img3 from "./assets/images/aaron.jpg";
 import img4 from "./assets/images/appliedopto.jpg";
 import img5 from "./assets/images/biotelemetry.png"
 import img6 from "./assets/images/blackhill.png";

@@ -10,14 +10,13 @@ const explore = () => {
      
       <Hero hero="exploreHero">
         <Banner title="Explore..">
-        <div className="search">
-        <form>
+      
+        <form className="search">
           <label>
-           <input type="text" name="name" placeholder="Searching for company" />
+           <input type="text" name="name" placeholder="Searching for company"/>
           </label> 
            <input type="submit" value="Find" />
         </form>
-      </div>
       
         </Banner>
       </Hero>

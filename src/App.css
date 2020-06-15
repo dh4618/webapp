@@ -158,7 +158,7 @@ bold {
     
     display: block;
     text-decoration: none;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     color:white;
     transition: var(--mainTransition);
     text-align: center;
@@ -191,21 +191,12 @@ bold {
 .exploreHero{
   background: url("./assets/images/welcome.svg") center/cover no-repeat;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
-.roomsHero {
-  min-height: calc(100vh - 66px);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.roomsHero {
-
-  min-height: 60vh;
-}
 
 /* Home Page */
 .home {
@@ -217,6 +208,7 @@ bold {
   background-image: url("./assets/images/explorebackgrond.jpg");
   color: white;
 }
+
 
 .loginHero{
   width: 600px;
@@ -237,6 +229,8 @@ bold {
 .loginHero input[type=submit] {
   margin-right: 0;
 }
+
+
 
 .signupHero{
   width: 1189px;
@@ -472,20 +466,35 @@ text-align: center;
   left: 1rem;
 }
 
+.search {
+  text-align: center;
+
+}
+
 .search input[type=text]{
-  float: right;
-  padding: 5px 100px;
+  font-size: 1rem;
+  width: 30vw;
+  padding-left: 0.3vw;
+  position: absolute;
+  left: 35vw;
   border: none;
+  padding-bottom: 0.5vw;
+  padding-top: 0.5vw;
   font-size: 15px;
 }
 
+
 .search input[type=submit]{
-  float: right;
-  padding: 5px 50px;
+  padding: 5px 0px;
+  width: 5vw;
   border: none;
   font-size: 15px;
   background-color: rgb(122, 126, 129);
   color: #F2F2F2;
+  position: relative;
+  left: 11vw;
+  top: 30px;
+
 }
 
 .filter {
@@ -497,8 +506,8 @@ text-align: center;
   display: inline-block;
   width: 150px;
   height: 10px;
+  position: absolute;
   margin-bottom: 0;
-  text-decoration: none;
   letter-spacing: 0;
   background: rgb(247, 169, 35);
   box-shadow: 1px 1px 1px grey;
@@ -512,8 +521,7 @@ text-align: center;
 
 .addto-wishlist:hover {
   box-shadow: none;
-  position: absolute;
-  margin-bottom: 0rem;
+  
 
 }
 
