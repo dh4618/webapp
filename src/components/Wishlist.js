@@ -23,7 +23,7 @@ function Wishlist({context}){
             <div className="roomslist-center">
                 {
                     companies.map(item => {
-                        if (!item.state.wishlist){return();}
+                        if (!item.state.wishlist){return(null);}
 
                         return(<Company key={item.id} company={item}/>)
                     })
