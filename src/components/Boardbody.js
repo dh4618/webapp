@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import Post from "./Post"
+import Postbody form "./Postbody"
 import {Link} from 'react-router-dom'
 
-class Postbody extends Component {
+class Boardbody extends Component {
   constructor(props){
     super(props);
 
@@ -10,8 +11,7 @@ class Postbody extends Component {
     this.handlePostEditorInputChange = this.handlePostEditorInputChange.bind(this);
 
     this.state = {
-      headPost: "",
-      posts: [],
+      posts: ["Welcome to Discussion Board","Post anything you like :)"],
       newPostBody: '',
     }
   }
@@ -34,17 +34,16 @@ class Postbody extends Component {
   render(){
     return(
       <div>
-      <Post postBody={headPost}/>
       {this.state.posts.map((postBody, idx) =>{
         return(
-          <Post key={idx} postBody ={postBody}/>
+          <Postbody key={idx} headPost ={postBody}/>
         )
       })}
 
       <div className = "panel panel-default">
         <div className = "panel-body">
           <textarea className = "form-control" onChange={this.handlePostEditorInputChange}/>
-          <button className = "btn btn-success" onClick = {this.addPost}>Comment</button>
+          <button className = "btn btn-success" onClick = {this.addPost}>Post</button>
         </div>
       </div>
       </div>
@@ -52,4 +51,4 @@ class Postbody extends Component {
   }
 }
 
-export default Postbody;
+export default Boardbody;

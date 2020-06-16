@@ -2,13 +2,19 @@ import React, { Component } from 'react'
 
 
 export default class ExploreCard extends Component {
-
+    constructor(props){
+      super(props);
+      this.setWishlist = this.setWishlist.bind(this);
+    }
+    setWishlist(){
+      this.props.wishlist = true;
+    }
     render() {
-      
-    
+
+
         return (
             <div className="company-card">
-            
+
              <div className ="company-card-info">
 
              <div className ="img-container" ><img src={ this.props.company.images[0]} alt="single company"/></div>
@@ -24,19 +30,14 @@ export default class ExploreCard extends Component {
 
              </div>
 
-             <div className="add-to-wishlist">
+             <div className="add-to-wishlist" onClick={this.setWishlist}>
              Add to Wish List
              </div>
              </div>
 
-            
-           
+
+
          </div>
         )
     }
 }
-
-
-
-
-

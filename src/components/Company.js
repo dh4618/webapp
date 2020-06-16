@@ -8,13 +8,14 @@ export default class Company extends Component {
     constructor(props) {
         super(props)
         this.state ={
-            price:0
-            };    
+            price:0,
+            wishlist:false
+            };
         }
 
-        
+
         componentDidMount() {
-            this.fetchPrice();  
+            this.fetchPrice();
         }
 
         //obtaining the price for the company
@@ -37,24 +38,24 @@ export default class Company extends Component {
                             temp_price.push(data['Time Series (Daily)']
                             [key]['1. open']);
                         }
-                    
+
                        pointerToThis.setState({
-                      
-                          price : temp_price[0]                        
+
+                          price : temp_price[0]
                        })
                     }
                 )
         }
     render() {
         const {slug} = this.props.company;
-    
+
         return (
             <div>
                  <article className="company">
           <Link to={`/explore/${slug}`} >
             <ExploreCard company={this.props.company} price={this.state.price}/>
          </Link>
-           
+
          </article>
             </div>
         )
@@ -71,4 +72,3 @@ Company.propTypes ={
         images:PropTypes.arrayOf(PropTypes.string).isRequired,
     })
 }
-
