@@ -568,10 +568,48 @@ text-align: center;
 
 /* extension */
 .extension {
-  background-color: rgb(59, 122, 88);
-  position:relative;
-  top:100px;
-  font-size: large;
+  background:linear-gradient(100deg, rgb(147, 225, 170) 0%, rgb(113, 178, 189) 100%);
+  width: 100vw;
+  height:auto;
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.usingExtension {
+  background:rgb(22, 48, 42);
+  width: 100vw;
+  height:auto;
+  text-align: center;
+  color:white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.extension-demo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-template-columns: 40vw auto;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+.extension-instr {
+   grid-template-columns: 40vw auto;
+   font-size: 20px;
+
+
+}
+
+.using-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-template-columns: 40vw 40vw;
+  justify-content: space-evenly;
+  margin-top: 3rem;
 }
 
 /* profile */
@@ -654,38 +692,7 @@ text-align: center;
   }
 }
 /*end of services */
-/* featured rooms */
 
-.featured-rooms {
-  padding: 5rem 0;
-  background: linear-gradient(50deg, #4b6cb7 0%, #182848 70%);
-  color: white;
-  letter-spacing: 4px;
-}
-.featured-rooms-center a{
-  width: 10vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 40px;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;  
-}
-/* @media screen and (min-width: 776px) {
-  .featured-rooms-center {
-    width: 90vw;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  }
-}
-@media screen and (min-width: 992px) {
-  .featured-rooms-center {
-    width: 10vw;
-    max-width: 1170px;
-  }
-} */
-/* end pf featured rooms */
 /* company */
 .company {
   box-shadow: var(--lightShadow);
@@ -703,31 +710,7 @@ text-align: center;
   margin-left: 50px;
  
 }
-/* .price-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  color: var(--mainWhite);
-  padding: 0.3rem 0.6rem 0.5rem;
-  border-bottom-right-radius: 1rem;
-  font-size: 0.5rem;
-  text-align: center;
-  transition: var(--mainTransition);
-} */
-.price-top h6 {
-  margin-bottom: 0;
-  font-size: 0.9rem;
-  font-weight: 300;
-  letter-spacing: var(--mainSpacing);
-}
-/* .room-link {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: scale(0);
-  transition: all 0.3s linear;
-} */
+
 
 .room-info {
   background: var(--darkGrey);
@@ -769,8 +752,6 @@ text-align: center;
 .tippy {
   background-color: rgb(201, 144, 37);
 }
-
-
 
 .tips-button {
   background: transparent;
