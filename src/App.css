@@ -566,6 +566,30 @@ text-align: center;
   font-size: large;
 }
 
+/* Discussion */
+.discussion {
+  background: linear-gradient(150deg,  #dfdaa4 40%, rgb(105, 182, 124) 40%);
+  width: 100vw;
+  height: 100vw;
+}
+
+
+.discussionHero{
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(83, 83, 83);
+  border-radius: 10px;
+  line-height: 3rem;
+  padding-top: 1rem;
+}
+
+.newpost{
+  background: white;
+  margin: 3px 2rem;
+}
+
 /* extension */
 .extension {
   background-color: rgb(59, 122, 88);
