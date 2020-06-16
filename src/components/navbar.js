@@ -32,7 +32,7 @@ class NavBar extends Component {
                     <li><Link to="/FAQ">Learning</Link></li>
                     <li><Link to="/discussion">Discussion</Link></li>
                     <li><Link to="/profile">My Profile</Link></li>
-                    <li><Link to="/aboutus">About Us</Link></li>
+                    <li><Link to="/extension">Extension</Link></li>
                 </ul>
                 </div>
             </nav>
