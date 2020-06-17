@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import Post from "../components/Post"
 import Postbody from "../components/Postbody"
+import InputDis from "../components/inputDis"
+import ListDis from "../components/listDis"
 
 
 export default function discussion() {
@@ -9,7 +11,10 @@ export default function discussion() {
         <div className="discussion">
             <h1 style={{textAlign:"center", paddingTop:"3rem"}}>Discussion</h1>
             <div className="discussionHero">
-            <Postbody/>
+            <div className="newpost">
+            <InputDis />
+            <ListDis />
+            </div>
             </div>
 
         </div>

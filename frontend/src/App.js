@@ -47,7 +47,7 @@ function App() {
         <Route exact path="/profile" render={props => isAuthenticated ? (<Profile {...props} setAuth={setAuth}/>) : (<Redirect to="/login" />)} />
         <Route exact path="/explore/" render={props => isAuthenticated ? (<Explore {...props} setAuth={setAuth}/>) : (<Redirect to="/login" />)} />
         <Route exact path="/explore/:slug" component={SingleCompany} />
-        <Route exact path="/discussion" render={props => isAuthenticated ? (<Discussion {...props} setAuth={setAuth}/>) : (<Redirect to="/login" />)} />
+        <Route exact path="/discussion" component={Discussion} />
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/tutorial2" component={tutorial2} />
         <Route exact path="/extension" component={Extension} />
