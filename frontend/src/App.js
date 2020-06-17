@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from "react";
+import React, {Fragment, useState, useEffect} from "react";
 import './App.css';
 import Home from './pages/home';
 import Signup from './pages/signup';
@@ -28,6 +28,27 @@ import NavBar from './components/navbar'
 toast.configure();
 
 function App() {
+
+  const checkAuthenticated = async () => {
+    try {
+      const res = await fetch("http://localhost:5000/auth/verify", {
+        method: "POST",
+        headers: { jwt_token: localStorage.token }
+      });
+
+      const parseRes = await res.json();
+
+      parseRes === true ? setIsAuthenticated(true) : setIsAuthenticated(false);
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+
+  useEffect(() => {
+    checkAuthenticated();
+  }, []);
+
+
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const setAuth = boolean => {
@@ -47,7 +68,7 @@ function App() {
         <Route exact path="/profile" render={props => isAuthenticated ? (<Profile {...props} setAuth={setAuth}/>) : (<Redirect to="/login" />)} />
         <Route exact path="/explore/" render={props => isAuthenticated ? (<Explore {...props} setAuth={setAuth}/>) : (<Redirect to="/login" />)} />
         <Route exact path="/explore/:slug" component={SingleCompany} />
-        <Route exact path="/discussion" component={Discussion} />
+        <Route exact path="/discussion" render={props => isAuthenticated ? (<Discussion {...props} setAuth={setAuth}/>) : (<Redirect to="/login" />)} />
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/tutorial2" component={tutorial2} />
         <Route exact path="/extension" component={Extension} />
