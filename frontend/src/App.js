@@ -7,7 +7,7 @@ import Explore from './pages/explore';
 import Error from './pages/error';
 import Payment from './pages/payment';
 import Profile from './pages/profile';
-import About from './pages/aboutus';
+import Extension from './pages/extension';
 import FAQ from './pages/FAQ';
 import tutorial2 from './pages/tutorial2';
 import SingleCompany from './pages/single-company';
@@ -20,7 +20,13 @@ import {
   Redirect
 } from "react-router-dom";
 
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import NavBar from './components/navbar'
+
+toast.configure();
+
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -44,7 +50,7 @@ function App() {
         <Route exact path="/discussion" render={props => isAuthenticated ? (<Discussion {...props} setAuth={setAuth}/>) : (<Redirect to="/login" />)} />
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/tutorial2" component={tutorial2} />
-        <Route exact path="/aboutus" component={About} />
+        <Route exact path="/extension" component={Extension} />
         <Route exact path="/payment" component={Payment} />
         <Route component={Error} />
       </Switch>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Plot from 'react-plotly.js';
 import Tips from "./Tips"
-
+import {Link} from "react-router-dom"
  
 class Stock extends Component {
     constructor(props) {
@@ -86,6 +86,7 @@ class Stock extends Component {
              ]}
         layout={ {width: 1000, height: 500 } }
       />
+      <div><Link to="/tutorial2">Click here if you are struggling analysing the graph</Link></div> 
       <div className="stock-recent-price">
         <h5>Updated:</h5>
           

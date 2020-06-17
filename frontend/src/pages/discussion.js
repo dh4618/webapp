@@ -6,8 +6,12 @@ import Postbody from "../components/Postbody"
 
 export default function discussion() {
     return (
-        <div>
-            <Postbody />
+        <div className="discussion">
+            <h1 style={{textAlign:"center", paddingTop:"3rem"}}>Discussion</h1>
+            <div className="discussionHero">
+            <Postbody/>
+            </div>
+
         </div>
     )
 }
