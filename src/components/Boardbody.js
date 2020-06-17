@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Post from "./Post"
-import Postbody form "./Postbody"
-import {Link} from 'react-router-dom'
+import Postbody from "./Postbody"
 
 class Boardbody extends Component {
   constructor(props){
