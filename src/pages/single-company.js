@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import {CompanyContext} from "../context" 
 import StyledHero from "../components/StyledHero"
 import Stock from "../components/Stock"
+import Tips from "../components/Tips"
 
 export default class single_company extends Component {
    //Accessing the slug
@@ -59,9 +60,21 @@ export default class single_company extends Component {
                     </article>
                     <article className="info">
                        <h3>info</h3>
-                       <h6>stock symbol: {symbol}</h6>
-                       <h6>subindustry: {subindustry}</h6>
-                       <h6>sector: {sector}</h6>
+                       <h6> 
+                        <Tips explanation="A stock symbol is a unique series of letters assigned to a security for trading purposes"/>
+            stock symbol: {symbol}
+                       </h6>
+                       <h6>
+                       <Tips explanation="A sector is an area of the 
+                economy in which businesses share the same or 
+                a related product or service."/> 
+                        GICS sector: {sector}
+                       </h6>
+                       <h6>
+                       <Tips explanation="An industry group is a classification method for individual companies or stocks that creates groupings based on common lines of business."/>
+                       GICS subindustry: {subindustry}
+                       </h6>
+                       
                     </article>
                     
                </div>

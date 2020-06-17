@@ -4,10 +4,13 @@ import React, { Component } from 'react'
 export default class ExploreCard extends Component {
 
     render() {
-      
+      console.log(this.props.company)
     
         return (
-            <div className="company-card">
+            <div className={this.props.increasing?"company-card-increasing": "company-card-decreasing" }>
+
+
+
             
              <div className ="company-card-info">
 
@@ -16,7 +19,7 @@ export default class ExploreCard extends Component {
              <div className="company-card-detail">
              <h3>{this.props.company.name}</h3>
              <p>Stock Symbol: {this.props.company.symbol}</p>
-
+         
              <p>Current Price:{this.props.price}</p>
              <br/>
              <p>#{this.props.company.sector}</p>

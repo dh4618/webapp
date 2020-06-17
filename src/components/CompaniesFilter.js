@@ -1,6 +1,7 @@
 import React from 'react'
 import {useContext} from 'react'
 import {CompanyContext} from  '../context'
+import Tips from "./Tips"
 
 //get all unique values
 const getUnique = (items, value) => {
@@ -39,7 +40,10 @@ export default function CompaniesFilter({companies}) {
             <form className="filter-form">
                 {/*select sector*/}
                 <div className = "form-group">
-                    <label htmlFor="sector"> Economic Sector</label>
+                    <label htmlFor="sector"> 
+                    <Tips explanation="A sector is an area of the 
+                economy in which businesses share the same or 
+                a related product or service."/>GICS Sector</label>
                     <select 
                         name="sector" 
                         id="sector" 
@@ -55,7 +59,9 @@ export default function CompaniesFilter({companies}) {
 
                 {/*select subindustry*/}
                 <div className = "form-group">
-                    <label htmlFor="subindustry"> Economic Subindustries</label>
+                
+                <label htmlFor="subindustry"> 
+                <Tips explanation="An industry group is a classification method for individual companies or stocks that creates groupings based on common lines of business."/> GICS Subindustries</label>
                     <select 
                         name="subindustry" 
                         id="subindustry" 
