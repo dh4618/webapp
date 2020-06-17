@@ -8,13 +8,19 @@ export default class Company extends Component {
     constructor(props) {
         super(props)
         this.state ={
-            price:0
+            price:0,
+            previous:0,
+            increasing:true
             };    
         }
 
         
         componentDidMount() {
             this.fetchPrice();  
+        }
+
+        changeColor =() => {
+            if(this.state.previous > this.state.price)  {this.state.increasing=false}
         }
 
         //obtaining the price for the company
@@ -24,6 +30,7 @@ export default class Company extends Component {
             const symbol = this.props.company.symbol;
             let API_CALL = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${symbol}&outputsize=compact&apikey=${API_KEY}`;
             let temp_price =[]
+            let temp_increasing= false;
             fetch(API_CALL)
                 .then(
                     function(response){
@@ -37,10 +44,18 @@ export default class Company extends Component {
                             temp_price.push(data['Time Series (Daily)']
                             [key]['1. open']);
                         }
+                    if (temp_price[0] > temp_price[1]) {
+                        temp_increasing=true;
+                    }
                     
                        pointerToThis.setState({
                       
-                          price : temp_price[0]                        
+                          price : temp_price[0],    
+                          previous: temp_price[1],
+                          increasing: temp_increasing
+                        
+                          
+                                 
                        })
                     }
                 )
@@ -52,7 +67,8 @@ export default class Company extends Component {
             <div>
                  <article className="company">
           <Link to={`/explore/${slug}`} >
-            <ExploreCard company={this.props.company} price={this.state.price}/>
+            <ExploreCard increasing={this.state.increasing} company={this.props.company} price={this.state.price}/>
+           
          </Link>
            
          </article>
@@ -71,4 +87,3 @@ Company.propTypes ={
         images:PropTypes.arrayOf(PropTypes.string).isRequired,
     })
 }
-

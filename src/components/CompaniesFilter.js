@@ -38,7 +38,7 @@ export default function CompaniesFilter({companies}) {
     return (
         <section className="filter-container">
             <form className="filter-form">
-                {/select sector/}
+                {/*select sector*/}
                 <div className = "form-group">
                     <label htmlFor="sector"> 
                     <Tips explanation="A sector is an area of the 
@@ -55,9 +55,9 @@ export default function CompaniesFilter({companies}) {
                     </select>
                        
                 </div>
-                {/end select sector/}
+                {/*end select sector*/}
 
-                {/select subindustry/}
+                {/*select subindustry*/}
                 <div className = "form-group">
                 
                 <label htmlFor="subindustry"> 
@@ -72,16 +72,16 @@ export default function CompaniesFilter({companies}) {
                     {subindustries}
                     </select>
                 </div>
-                {/end select subindustry/}
+                {/*end select subindustry*/}
 
-                {/select price/}
+                {/*select price*/}
                 <div className = "form-group">
                     <label htmlFor="price"> Price ${price}</label>
                     <input type="range" name="price" 
                     min={minPrice} max={maxPrice} id="price" value={price}
                     onChange={handleChange} className="form-control"/>
                 </div>
-                {/end select price/}
+                {/*end select price*/}
             </form>
         </section>
     )

@@ -23,6 +23,15 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
 } */
+
+.green{
+  background: green;
+}
+
+.red{
+  background: red
+}
+
 h1 {
   font-size: 3em;
   line-height: 1;
@@ -430,6 +439,27 @@ text-align: center;
   width: 250px;
   height: 300px;
   background-color: rgb(240, 236, 236);
+  box-shadow: 3px 3px 2px rgb(8, 23, 65);
+  border-radius: 10px;
+  line-height: 3px;  
+}
+
+.company-card-increasing {
+  width: 250px;
+  height: 300px;
+  background-color: rgb(235, 231, 231);;
+  color: rgb(77, 125, 77);
+  box-shadow: 3px 3px 2px rgb(8, 23, 65);
+  border-radius: 10px;
+  line-height: 3px;  
+}
+
+.company-card-decreasing {
+  width: 250px;
+  height: 300px;
+  /* background-color: rgba(204, 105, 122, 0.158); */
+  background-color: rgb(235, 231, 231);
+  color: rgb(124, 32, 32);
   box-shadow: 3px 3px 2px rgb(8, 23, 65);
   border-radius: 10px;
   line-height: 3px;  
