@@ -48,6 +48,7 @@ router.post("/login", validInfo, async (req, res) => {
     ]);
 
     if (user.rows.length === 0) {
+      console.log("no user found")
       return res.status(401).json("Invalid Credential");
     }
 

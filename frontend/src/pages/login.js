@@ -53,6 +53,7 @@ const Login = ({setAuth}) => {
                 <div className="form-fields">Password :<input type="password" name="password" value ={password} onChange={e=>onChange(e)}/></div>
                 <button>Log In</button>
                 </form>
+                Don't have an account? Register <Link to="/signup">here</Link>.
             </div>
             
         </div>
