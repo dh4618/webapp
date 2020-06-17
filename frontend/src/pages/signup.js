@@ -1,7 +1,49 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React, {useState} from 'react'
+import {Link, Redirect} from 'react-router-dom'
+import { toast } from "react-toastify";
 
-export default function signup() {
+const Signup = ({setAuth})=> {
+    const [inputs, setInputs] = useState({
+    email: "",
+    password: "",
+    name: ""
+    });
+
+    const { email, password, name } = inputs;
+
+    const onChange = e =>
+    setInputs({ ...inputs, [e.target.name]: e.target.value });
+
+  const onSubmitForm = async e => {
+    e.preventDefault();
+    try {
+      const body = { email, password, name };
+      const response = await fetch(
+        "http://localhost:5000/auth/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json"
+          },
+          body: JSON.stringify(body)
+        }
+      );
+      const parseRes = await response.json();
+
+      if (parseRes.jwtToken) {
+        localStorage.setItem("token", parseRes.jwtToken);
+        setAuth(true);
+        toast.success("Register Successfully");
+      } else {
+        setAuth(false);
+        toast.error(parseRes);
+      }
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+
+
     return (
         <div className="signup">
             <div className = "signupHero">
@@ -10,9 +52,11 @@ export default function signup() {
             <br />
             <h1>Register</h1>
             <br />
+            <form onSubmit={onSubmitForm}>
             <h3>Your details</h3>
+            
             First name *<br />
-            <div className="reg-form-fields"><input type="text" name="firstname" /> </div>
+            <div className="reg-form-fields"><input type="text" name="name" value = {name} onChange={e => onChange(e)} /> </div>
             Last name *
             <div className="reg-form-fields"><input type="text" name="lastname"/> </div>
             Sex *<br />
@@ -28,24 +72,27 @@ export default function signup() {
             <div className="reg-form-fields"><input type="text" name="city" placeholder="City" /></div>
             <div className="reg-form-shorter-fields"><input type="text" name="postcode" placeholder="Post code" /></div>
             Date of birth *<br />
-            <div/>
+            
             <div className="reg-form-shorter-fields"><input type="date" name="DOB" /> </div>
             Email *<br />
-            <div className="reg-form-fields"><input type="text" name="email"/></div>
+            <div className="reg-form-fields"><input type="email" name="email" value = {email} onChange={e => onChange(e)}/></div>
             Phone number<br />
             <div className="reg-form-fields"><input type="text" name="phoneno"/></div>
             License number<br />
             <div className="reg-form-fields"><input type="text" name="licenseno"/></div>
             Password *<br />
-            <div className="reg-form-fields"><input type="password" name="password"/></div>
+            <div className="reg-form-fields"><input type="password" name="password" value = {password} onChange={e => onChange(e)}/></div>
             Confirm password *<br />
             <div className="reg-form-fields"><input type="password" name="confirmedpassword"/></div>
-
-            </div>
-            
+           
             <br />
-            <Link to="/explore"><input type="button" value="Create Account" /></Link>
+            <button>Create Account</button>
+            </form>
             </div>
+            </div>
+           
         </div>
     )
 }
+
+export default Signup;

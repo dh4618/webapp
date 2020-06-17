@@ -12,6 +12,6 @@ app.use(cors())
 //register and login routes
 app.use("/auth", require("./routes/jwtAuth"))
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.use("/myprofile", require("./routes/myProfile"));
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
