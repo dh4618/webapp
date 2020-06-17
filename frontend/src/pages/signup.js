@@ -88,6 +88,7 @@ const Signup = ({setAuth})=> {
             <br />
             <button>Create Account</button>
             </form>
+            
             </div>
             </div>
            

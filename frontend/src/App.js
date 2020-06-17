@@ -35,13 +35,13 @@ function App() {
   
       <div>
         <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/signup" render={props => !isAuthenticated ? (<Signup {...props} setAuth={setAuth} />) : (<Redirect to="/profile" />)} />
-        <Route exact path="/login" render={props => !isAuthenticated ? (<Login {...props} setAuth={setAuth}/>) : (<Redirect to="/profile" />)} />
+        <Route exact path="/" render={props => <Home {...props} isAuthenticated={isAuthenticated} />}/>
+        <Route exact path="/signup" render={props => !isAuthenticated ? (<Signup {...props} setAuth={setAuth} />) : (<Redirect to="/" />)} />
+        <Route exact path="/login" render={props => !isAuthenticated ? (<Login {...props} setAuth={setAuth}/>) : (<Redirect to="/" />)} />
         <Route exact path="/profile" render={props => isAuthenticated ? (<Profile {...props} setAuth={setAuth}/>) : (<Redirect to="/login" />)} />
-        <Route exact path="/explore/" component={Explore} />
+        <Route exact path="/explore/" render={props => isAuthenticated ? (<Explore {...props} setAuth={setAuth}/>) : (<Redirect to="/login" />)} />
         <Route exact path="/explore/:slug" component={SingleCompany} />
-        <Route exact path="/discussion" component={Discussion} />
+        <Route exact path="/discussion" render={props => isAuthenticated ? (<Discussion {...props} setAuth={setAuth}/>) : (<Redirect to="/login" />)} />
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/tutorial2" component={tutorial2} />
         <Route exact path="/aboutus" component={About} />

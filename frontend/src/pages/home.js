@@ -3,12 +3,12 @@ import MainPageCard from "../components/MainPageCard"
 import Service from "../components/Service"
 import FeaturedCompany from "../components/FeaturedCompany"
 
-export default function home() {
+export default function home( {isAuthenticated} ) {
     return (
       <>
       <div className="home">
      
-      <MainPageCard/>
+      <MainPageCard isAuthenticated={isAuthenticated}/>
     
       </div>
        <Service/>
