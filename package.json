@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "flexbox-react": "^4.4.0",
     "pg": "^8.2.1",
-    "plotly.js": "^1.54.1",
+    "plotly.js": "^2.25.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-dropdown": "^1.7.0",
